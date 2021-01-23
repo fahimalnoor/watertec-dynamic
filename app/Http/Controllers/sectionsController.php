@@ -12,66 +12,75 @@ use Illuminate\Support\Facades\Validator;
 class sectionsController extends Controller
 {
     //all section views here
-    public function slider1()
+    public function sliders1()
    
     {   
-        $content = DB::table('sections')->get();
+        $content = DB::table('sections')->
+        where('sec_name','section_1')->get();
         return view('backend.sections.section_1_slider',compact('content'));
     } 
 
     public function products2()
    
     {   
-        $content = DB::table('sections')->get();
+        $content = DB::table('sections')->
+        where('sec_name','section_2')->get();
         return view('backend.sections.section_2_product_slider',compact('content'));
     } 
 
     public function about3()
    
     {   
-        $content = DB::table('sections')->get();
+        $content = DB::table('sections')->
+        where('sec_name','section_3')->get();
         return view('backend.sections.section_3_about',compact('content'));
     } 
 
     public function gallary4()
    
     {   
-        $content = DB::table('sections')->get();
+        $content = DB::table('sections')->
+        where('sec_name','section_4')->get();
         return view('backend.sections.section_4_gallary',compact('content'));
     } 
 
     public function logos5()
    
     {   
-        $content = DB::table('sections')->get();
+        $content = DB::table('sections')->
+        where('sec_name','section_5')->get();
         return view('backend.sections.section_5_logos',compact('content'));
     } 
 
     public function products6()
    
     {   
-        $content = DB::table('sections')->get();
+        $content = DB::table('sections')->
+        where('sec_name','section_6')->get();
         return view('backend.sections.section_6_products',compact('content'));
     } 
 
     public function collections7()
    
     {   
-        $content = DB::table('sections')->get();
+        $content = DB::table('sections')->
+        where('sec_name','section_7')->get();
         return view('backend.sections.section_7_collections',compact('content'));
     } 
 
     public function videos8()
    
     {   
-        $content = DB::table('sections')->get();
+        $content = DB::table('sections')->
+        where('sec_name','section_8')->get();
         return view('backend.sections.section_8_videos',compact('content'));
     } 
 
     public function contacts9()
    
     {   
-        $content = DB::table('sections')->get();
+        $content = DB::table('sections')->
+        where('sec_name','section_9')->get();
         return view('backend.sections.section_9_contacts',compact('content'));
     } 
 
