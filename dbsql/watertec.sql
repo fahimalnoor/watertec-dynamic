@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2021 at 07:03 PM
+-- Generation Time: Jan 23, 2021 at 08:40 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.3.24
 
@@ -218,8 +218,8 @@ CREATE TABLE `sections` (
 --
 
 INSERT INTO `sections` (`id`, `sec_name`, `image`, `description`, `status`, `updated_at`) VALUES
-(2, 'section 2 products', 'public/image/imageSection/supra_2021.jpg', '<p>Here is the toyota supra displayed&nbsp;</p>', 'Active', '2021-01-23 07:14:27'),
-(5, 'sec 2 product', 'public/image/imageSection/1997_toyota_supra_158142853365ef66e7dff9f98761997_toyota_supra_1581428532d565ef66e7dff9f0a0a4cdf-f25a-4c25-a3eb-6ef64f5089d1-Vec8EU.webp', '<p>supra black</p>', 'Active', '2021-01-23 13:40:03');
+(2, 'section_2', 'public/image/imageSection/supra_2021.jpg', '<p>Here is the toyota supra displayed&nbsp;</p>', 'Active', '2021-01-23 19:19:49'),
+(5, 'section_2', 'public/image/imageSection/1997_toyota_supra_158142853365ef66e7dff9f98761997_toyota_supra_1581428532d565ef66e7dff9f0a0a4cdf-f25a-4c25-a3eb-6ef64f5089d1-Vec8EU.webp', '<p>supra black</p>', 'Active', '2021-01-23 19:36:39');
 
 -- --------------------------------------------------------
 
@@ -241,7 +241,7 @@ CREATE TABLE `sliders` (
 
 INSERT INTO `sliders` (`id`, `image`, `status`, `created_at`, `updated_at`) VALUES
 (8, 'public/image/imageSlider/slide1.jpg', 'Active', NULL, NULL),
-(9, 'public/image/imageSlider/slide2.jpg', 'Inactive', NULL, '2021-01-23 12:01:33');
+(9, 'public/image/imageSlider/slide2.jpg', 'Active', NULL, '2021-01-23 13:12:58');
 
 -- --------------------------------------------------------
 
@@ -327,7 +327,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'fahim', 'fahimalnoor1@gmail.com', NULL, '$2y$10$K6XuOXpwEQFFMVgx9OOmSe3DbTzlchtgqiXAA66KAJyPxsFjZHJky', 'IOFElt2jnWen8ONaoroPr0jaXseIM7mKvE2vHz4QTgFyRtHrGBjo2VHaZcVi', '2021-01-14 07:31:53', '2021-01-14 07:31:53');
+(1, 'fahim', 'fahimalnoor1@gmail.com', NULL, '$2y$10$K6XuOXpwEQFFMVgx9OOmSe3DbTzlchtgqiXAA66KAJyPxsFjZHJky', 'sYsPtAhfFTI6loDcq97Bpf5X1YUmd6SxsI9mXNRK8hhc3W3EKtao5PfJCHs9', '2021-01-14 07:31:53', '2021-01-14 07:31:53');
 
 --
 -- Indexes for dumped tables

@@ -118,7 +118,8 @@
                                             @csrf
                                         <div class="card-body">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="sec_name" name="sec_name" placeholder="Enter Section Header Name">
+                                            Section header name: <br>
+                                            <input type="text" class="form-control" id="sec_name" name="sec_name" value="section_2" readonly>
                                         </div><br>
                                         <div class="form-group">
                                             <div class="custom-file">

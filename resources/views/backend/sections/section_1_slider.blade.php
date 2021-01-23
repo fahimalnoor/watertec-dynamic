@@ -69,12 +69,19 @@
                                                  </div>
                                                 <div class="modal-body">
 
-                    <form action="{{ url('/admin/sections/update', $all_cont->id) }}" method="POST">
+                    <form action="{{ route('section.update', $all_cont->id) }}" method="POST">
                         @csrf
                         <div class="form-group">
                             <label>Edit Section Header Name</label>
                             <input type="text" name="sec_name" class="form-control" placeholder="Edit Section Name" value="{{$all_cont->sec_name}}">
 
+                        </div>
+
+                        <div class="form-group">
+                            <label>Edit Description</label>
+                            <textarea class="tinymce" name="description">
+                            {{$all_cont->description}}
+                                            </textarea>
                         </div>
 
                          <div class="form-group" >
@@ -107,11 +114,12 @@
                                     <div class="card-header">
                                     <h5 class="text-color">Add Content</h5>
                                         </div>
-                                        <form action="{{url('/admin/sections/2/products/store')}}" method="POST" enctype="multipart/form-data">
+                                        <form action="{{route('section.store')}}" method="POST" enctype="multipart/form-data">
                                             @csrf
                                         <div class="card-body">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="sec_name" name="sec_name" placeholder="Enter Section Header Name">
+                                            Section header name: <br>
+                                            <input type="text" class="form-control" id="sec_name" name="sec_name" value="section_2" readonly>
                                         </div><br>
                                         <div class="form-group">
                                             <div class="custom-file">
