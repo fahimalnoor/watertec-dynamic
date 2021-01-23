@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://bath-fixtures.myshopify.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://bath-fixtures.myshopify.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://bath-fixtures.myshopify.com/collections/latest-product.atom"/>
+  <title>Joga - Bath Fixtures</title>
+  <updated>2018-07-11T04:29:18-04:00</updated>
+  <author>
+    <name>Joga - Bath Fixtures</name>
+  </author>
+  <entry>
+    <id>https://bath-fixtures.myshopify.com/products/1895263273078</id>
+    <published>2018-07-11T04:29:18-04:00</published>
+    <updated>2018-07-11T04:29:18-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bath-fixtures.myshopify.com/products/rain-shower-cabinet"/>
+    <title>Rain Shower Cabinet</title>
+    <s:type>Cabinet</s:type>
+    <s:vendor>Syga</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0045/0523/9670/products/product28_4091d415-0f31-4fb6-a6f9-9008af771424.jpg?v=1532495305"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Syga<br>
+        <strong>Type: </strong>Cabinet<br>
+        <strong>Price: </strong>
+            529.00 - 699.00
+            <a href="https://bath-fixtures.myshopify.com/products/rain-shower-cabinet">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$500 - $700</s:tag>
+    <s:tag>Cabinet</s:tag>
+    <s:tag>M</s:tag>
+    <s:tag>Syga</s:tag>
+    <s:tag>White</s:tag>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1895263273078</id>
+      <title>M / White</title>
+      <s:price currency="USD">529.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1895263273078</id>
+      <title>L / White</title>
+      <s:price currency="USD">629.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1895263273078</id>
+      <title>S / White</title>
+      <s:price currency="USD">699.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bath-fixtures.myshopify.com/products/1786327466102</id>
+    <published>2018-07-11T04:29:18-04:00</published>
+    <updated>2018-07-11T04:29:18-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bath-fixtures.myshopify.com/products/shower-cabinet"/>
+    <title>Shower Cabinet</title>
+    <s:type>Cabinet</s:type>
+    <s:vendor>Syga</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0045/0523/9670/products/product27.jpg?v=1532493395"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Syga<br>
+        <strong>Type: </strong>Cabinet<br>
+        <strong>Price: </strong>
+            529.00 - 699.00
+            <a href="https://bath-fixtures.myshopify.com/products/shower-cabinet">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$500 - $700</s:tag>
+    <s:tag>Cabinet</s:tag>
+    <s:tag>M</s:tag>
+    <s:tag>Syga</s:tag>
+    <s:tag>White</s:tag>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786327466102</id>
+      <title>M / White</title>
+      <s:price currency="USD">529.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786327466102</id>
+      <title>L / White</title>
+      <s:price currency="USD">629.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786327466102</id>
+      <title>S / White</title>
+      <s:price currency="USD">699.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bath-fixtures.myshopify.com/products/1786327400566</id>
+    <published>2018-07-11T04:29:17-04:00</published>
+    <updated>2018-07-11T04:29:17-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bath-fixtures.myshopify.com/products/the-folding-baby-bath"/>
+    <title>The Folding Baby Bath</title>
+    <s:type>Bath Tub</s:type>
+    <s:vendor>GetBest</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0045/0523/9670/products/product19.jpg?v=1532436134"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>GetBest<br>
+        <strong>Type: </strong>Bath Tub<br>
+        <strong>Price: </strong>
+            324.00 - 444.00
+            <a href="https://bath-fixtures.myshopify.com/products/the-folding-baby-bath">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$300 - $500</s:tag>
+    <s:tag>20 inch</s:tag>
+    <s:tag>Bath Tub</s:tag>
+    <s:tag>GetBest</s:tag>
+    <s:tag>White</s:tag>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786327400566</id>
+      <title>20 inch / White</title>
+      <s:price currency="USD">324.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786327400566</id>
+      <title>24 inch / White</title>
+      <s:price currency="USD">444.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bath-fixtures.myshopify.com/products/1786326548598</id>
+    <published>2018-07-11T04:29:11-04:00</published>
+    <updated>2018-07-11T04:29:11-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bath-fixtures.myshopify.com/products/wall-mounted-sinks"/>
+    <title>Wall Mounted Sinks</title>
+    <s:type>Sink</s:type>
+    <s:vendor>Tecla</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0045/0523/9670/products/product2_bff182ed-3234-4577-800e-19d1712d2ecc.jpg?v=1532424976"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Tecla<br>
+        <strong>Type: </strong>Sink<br>
+        <strong>Price: </strong>
+            219.00 - 299.00
+            <a href="https://bath-fixtures.myshopify.com/products/wall-mounted-sinks">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$200 - $300</s:tag>
+    <s:tag>20 inch</s:tag>
+    <s:tag>Sandal</s:tag>
+    <s:tag>Sink</s:tag>
+    <s:tag>Tecla</s:tag>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786326548598</id>
+      <title>20 inch / Sandal</title>
+      <s:price currency="USD">229.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786326548598</id>
+      <title>24 inch / White</title>
+      <s:price currency="USD">219.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786326548598</id>
+      <title>32 inch / Silver</title>
+      <s:price currency="USD">299.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bath-fixtures.myshopify.com/products/1892750164086</id>
+    <published>2018-07-11T04:29:06-04:00</published>
+    <updated>2018-07-11T04:29:06-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bath-fixtures.myshopify.com/products/tissue-holder-for-toilet"/>
+    <title>Tissue Holder for Toilet</title>
+    <s:type>Holder</s:type>
+    <s:vendor>Bathla</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0045/0523/9670/products/product17_4254a4b9-5acc-4041-b16c-28efb5e59077.jpg?v=1532435316"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Bathla<br>
+        <strong>Type: </strong>Holder<br>
+        <strong>Price: </strong>
+            121.00 - 198.00
+            <a href="https://bath-fixtures.myshopify.com/products/tissue-holder-for-toilet">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$100 - $200</s:tag>
+    <s:tag>Bathla</s:tag>
+    <s:tag>Grey</s:tag>
+    <s:tag>Holder</s:tag>
+    <s:tag>S</s:tag>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1892750164086</id>
+      <title>S / Grey / Steel</title>
+      <s:price currency="USD">129.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1892750164086</id>
+      <title>M / Grey / Steel</title>
+      <s:price currency="USD">198.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1892750164086</id>
+      <title>L / Grey / Steel</title>
+      <s:price currency="USD">121.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bath-fixtures.myshopify.com/products/1786324615286</id>
+    <published>2018-07-11T04:28:58-04:00</published>
+    <updated>2018-07-11T04:28:58-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bath-fixtures.myshopify.com/products/single-hole-kitchen-faucets"/>
+    <title>Single Hole Kitchen Faucets</title>
+    <s:type>Faucets</s:type>
+    <s:vendor>Rolex</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0045/0523/9670/products/product14.jpg?v=1532435730"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Rolex<br>
+        <strong>Type: </strong>Faucets<br>
+        <strong>Price: </strong>
+            728.00 - 899.00
+            <a href="https://bath-fixtures.myshopify.com/products/single-hole-kitchen-faucets">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$700 - $1000</s:tag>
+    <s:tag>Faucets</s:tag>
+    <s:tag>M</s:tag>
+    <s:tag>Rolex</s:tag>
+    <s:tag>Silver</s:tag>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786324615286</id>
+      <title>M / Silver</title>
+      <s:price currency="USD">728.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786324615286</id>
+      <title>L / Silver</title>
+      <s:price currency="USD">759.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786324615286</id>
+      <title>S / Silver</title>
+      <s:price currency="USD">899.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bath-fixtures.myshopify.com/products/1786324516982</id>
+    <published>2018-07-11T04:28:55-04:00</published>
+    <updated>2018-07-11T04:28:55-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bath-fixtures.myshopify.com/products/white-drop-in-sink"/>
+    <title>White Drop In Sink</title>
+    <s:type>Sink</s:type>
+    <s:vendor>Cerastyle</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0045/0523/9670/products/product12.jpg?v=1532426102"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Cerastyle<br>
+        <strong>Type: </strong>Sink<br>
+        <strong>Price: </strong>
+            118.00 - 186.00
+            <a href="https://bath-fixtures.myshopify.com/products/white-drop-in-sink">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$100 - $200</s:tag>
+    <s:tag>24 inch</s:tag>
+    <s:tag>Cerastyle</s:tag>
+    <s:tag>Sink</s:tag>
+    <s:tag>White</s:tag>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786324516982</id>
+      <title>24 inch / White / Creamic</title>
+      <s:price currency="USD">186.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786324516982</id>
+      <title>34 inch / White / Creamic</title>
+      <s:price currency="USD">129.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1786324516982</id>
+      <title>20 inch / White / Creamic</title>
+      <s:price currency="USD">118.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://bath-fixtures.myshopify.com/products/1892461707382</id>
+    <published>2018-07-11T04:28:52-04:00</published>
+    <updated>2018-07-11T04:28:52-04:00</updated>
+    <link rel="alternate" type="text/html" href="https://bath-fixtures.myshopify.com/products/slidebar-shower-set"/>
+    <title>Slidebar Shower Set</title>
+    <s:type>Shower</s:type>
+    <s:vendor>Remer</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0045/0523/9670/products/product1_f5684194-e823-44d4-84ec-135bafdda3ee.jpg?v=1532428311"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Remer<br>
+        <strong>Type: </strong>Shower<br>
+        <strong>Price: </strong>
+            522.00 - 639.00
+            <a href="https://bath-fixtures.myshopify.com/products/slidebar-shower-set">(3 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>$500 - $700</s:tag>
+    <s:tag>20 inch</s:tag>
+    <s:tag>Remer</s:tag>
+    <s:tag>Shower</s:tag>
+    <s:tag>Silver</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1892461707382</id>
+      <title>20 inch / Silver / Stainless Steel</title>
+      <s:price currency="USD">522.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1892461707382</id>
+      <title>24 inch / Silver / Stainless Steel</title>
+      <s:price currency="USD">543.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://bath-fixtures.myshopify.com/products/1892461707382</id>
+      <title>34 inch / Silver / Stainless Steel</title>
+      <s:price currency="USD">639.00</s:price>
+      <s:sku></s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>
