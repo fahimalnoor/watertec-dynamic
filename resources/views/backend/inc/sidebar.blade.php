@@ -129,7 +129,7 @@
                             </ul>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ route('section.2') }}" class="nav-link">
+                                    <a href="{{ route('section.7') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Section-7 Collections</p>
                                     </a>

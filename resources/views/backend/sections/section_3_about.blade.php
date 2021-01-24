@@ -18,13 +18,13 @@
             <div class="content">
                 <div class="container-fluid">
                     <div class="content-header">
-                        <h6 class="m-0 text-color">Home > Sections > <span>Create Section-2 Product Content</span></h6>
+                        <h6 class="m-0 text-color">Home > Sections > <span>Create Section-3 About Content</span></h6>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="text-color">Contents</h5>
+                                    <h5 class="text-color">Section Contents</h5>
                                 </div>
                                 <div class="card-body">
                                     <table id="example1" class="table table-bordered table-striped">
