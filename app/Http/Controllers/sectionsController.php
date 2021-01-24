@@ -12,13 +12,14 @@ use Illuminate\Support\Facades\Validator;
 class sectionsController extends Controller
 {
     //all section views here
-    public function sliders1()
+    
+    // public function sliders1()
    
-    {   
-        $content = DB::table('sections')->
-        where('sec_name','section_1')->get();
-        return view('backend.sections.section_1_slider',compact('content'));
-    } 
+    // {   
+    //     $content = DB::table('sections')->
+    //     where('sec_name','section_1')->get();
+    //     return view('backend.sections.section_1_slider',compact('content'));
+    // } 
 
     public function products2()
    

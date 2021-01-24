@@ -79,14 +79,7 @@
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{ route('section.1') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Section-1 Sliders</p>
-                                    </a>
-                                </li>
-                            </ul>
+                            
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="{{ route('section.2') }}" class="nav-link">

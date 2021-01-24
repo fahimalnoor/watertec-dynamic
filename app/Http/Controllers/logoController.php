@@ -39,10 +39,10 @@ class logoController extends Controller
         DB::table('logos')->insert($data);
         return redirect()->back();
         }
-        $data=array();
-        $data['logo_status']=$request->logo_status;
-        DB::table('logos')->insert($data);
-        return redirect()->back(); 
+        // $data=array();
+        // $data['logo_status']=$request->logo_status;
+        // DB::table('logos')->insert($data);
+        // return redirect()->back(); 
         
     }
 

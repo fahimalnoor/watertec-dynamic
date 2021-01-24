@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2021 at 08:40 PM
+-- Generation Time: Jan 24, 2021 at 12:36 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.3.24
 
@@ -231,6 +231,7 @@ CREATE TABLE `sliders` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -239,9 +240,10 @@ CREATE TABLE `sliders` (
 -- Dumping data for table `sliders`
 --
 
-INSERT INTO `sliders` (`id`, `image`, `status`, `created_at`, `updated_at`) VALUES
-(8, 'public/image/imageSlider/slide1.jpg', 'Active', NULL, NULL),
-(9, 'public/image/imageSlider/slide2.jpg', 'Active', NULL, '2021-01-23 13:12:58');
+INSERT INTO `sliders` (`id`, `image`, `status`, `description`, `created_at`, `updated_at`) VALUES
+(8, 'public/image/imageSlider/slide1.jpg', 'Active', NULL, NULL, NULL),
+(9, 'public/image/imageSlider/slide2.jpg', 'Active', NULL, NULL, '2021-01-23 13:12:58'),
+(13, 'public/image/imageSlider/3.jpg', 'Active', NULL, NULL, '2021-01-24 05:19:01');
 
 -- --------------------------------------------------------
 
@@ -327,7 +329,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'fahim', 'fahimalnoor1@gmail.com', NULL, '$2y$10$K6XuOXpwEQFFMVgx9OOmSe3DbTzlchtgqiXAA66KAJyPxsFjZHJky', 'sYsPtAhfFTI6loDcq97Bpf5X1YUmd6SxsI9mXNRK8hhc3W3EKtao5PfJCHs9', '2021-01-14 07:31:53', '2021-01-14 07:31:53');
+(1, 'fahim', 'fahimalnoor1@gmail.com', NULL, '$2y$10$K6XuOXpwEQFFMVgx9OOmSe3DbTzlchtgqiXAA66KAJyPxsFjZHJky', 'Y4fV2sr4GLVHJXrYO7WmJ5j6cWp650RwWuwfiOTOBh60X4mBi4HCTq1aBiFZ', '2021-01-14 07:31:53', '2021-01-14 07:31:53');
 
 --
 -- Indexes for dumped tables
@@ -481,7 +483,7 @@ ALTER TABLE `sections`
 -- AUTO_INCREMENT for table `sliders`
 --
 ALTER TABLE `sliders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `subcategories`

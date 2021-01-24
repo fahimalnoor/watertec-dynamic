@@ -35,13 +35,14 @@ class sliderController extends Controller
         $data=array();
         $data['image']=$imgUrl;
         $data['status']=$request->status;
+        $data['description']=$request->description;
         DB::table('sliders')->insert($data);
         return redirect()->back();
         }
-        $data=array();
-        $data['status']=$request->status;
-        DB::table('sliders')->insert($data);
-        return redirect()->back(); 
+        // $data=array();
+        // $data['status']=$request->status;
+        // DB::table('sliders')->insert($data);
+        // return redirect()->back(); 
         
     }
 
@@ -56,6 +57,7 @@ class sliderController extends Controller
     public function update(Request $request , $id)
     {  
         $slider=Slider::find($request->id);
+        $slider->description=$request->description;
         $slider->status=$request->status;
         $slider->save();
         return redirect()->back();

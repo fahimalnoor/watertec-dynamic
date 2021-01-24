@@ -14,7 +14,7 @@ Route::group(['middleware' => 'auth'], function() {
 //Route for sections
     
     Route::post('/admin/sections/store','sectionsController@store')->name('section.store');
-    Route::get('/admin/sections/1/sliders','sectionsController@sliders1')->name('section.1');
+    //Route::get('/admin/sections/1/sliders','sectionsController@sliders1')->name('section.1');
     Route::get('/admin/sections/2/products','sectionsController@products2')->name('section.2');
     Route::get('/admin/sections/3/about','sectionsController@about3')->name('section.3');
     Route::get('/admin/sections/4/gallary','sectionsController@gallary4')->name('section.4');
