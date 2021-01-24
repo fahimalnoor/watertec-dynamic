@@ -72,8 +72,8 @@
                     <form action="{{ route('section.update', $all_cont->id) }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label>Edit Section Header Name</label>
-                            <input type="text" name="sec_name" class="form-control" placeholder="Edit Section Name" value="{{$all_cont->sec_name}}">
+                            <label>Section Header Name</label>
+                            <input type="text" name="sec_name" class="form-control" placeholder="Edit Section Name" value="{{$all_cont->sec_name}}" readonly>
 
                         </div>
 
@@ -119,7 +119,7 @@
                                         <div class="card-body">
                                         <div class="form-group">
                                             Section header name: <br>
-                                            <input type="text" class="form-control" id="sec_name" name="sec_name" value="section_2" readonly>
+                                            <input type="text" class="form-control" id="sec_name" name="sec_name" value="section_1" readonly>
                                         </div><br>
                                         <div class="form-group">
                                             <div class="custom-file">

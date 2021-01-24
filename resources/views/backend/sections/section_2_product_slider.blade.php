@@ -72,8 +72,8 @@
                     <form action="{{ route('section.update', $all_cont->id) }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label>Edit Section Header Name</label>
-                            <input type="text" name="sec_name" class="form-control" placeholder="Edit Section Name" value="{{$all_cont->sec_name}}">
+                            <label>Section Header Name</label>
+                            <input type="text" name="sec_name" class="form-control" placeholder="Edit Section Name" value="{{$all_cont->sec_name}}" readonly>
 
                         </div>
 

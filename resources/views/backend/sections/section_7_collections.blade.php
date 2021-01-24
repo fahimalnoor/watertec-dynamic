@@ -73,7 +73,7 @@
                         @csrf
                         <div class="form-group">
                             <label>Edit Section Header Name</label>
-                            <input type="text" name="sec_name" class="form-control" placeholder="Edit Section Name" value="{{$all_cont->sec_name}}">
+                            <input type="text" name="sec_name" class="form-control" placeholder="Edit Section Name" value="{{$all_cont->sec_name}}" readonly>
 
                         </div>
 
