@@ -82,6 +82,13 @@
                                             </textarea>
                         </div>
 
+                        <div class="form-group">
+                            <label>Modify Code</label>
+                            <textarea name="code">
+                            {{$all_slide->code}}
+                                            </textarea>
+                        </div>
+
                          <div class="form-group" >
                                             <p>Edit Status:</p>
                                         <input type="radio" id="active" name="status" value="Active">
@@ -134,6 +141,12 @@
                                                         <div class="form-group">
                                             Enter Description Below<br>
                                             <textarea class="tinymce" name="description" value="">
+                                            </textarea>
+                                        </div><br>
+
+                                        <div class="form-group">
+                                            Enter Code Below (Optional)<br>
+                                            <textarea class="tinymce" name="code" value="">
                                             </textarea>
                                         </div><br>
                                                         

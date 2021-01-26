@@ -33,8 +33,7 @@
                                                 <th>SL No.</th>
                                                 <th>Name</th>
                                                 <th>Status</th>
-                                                <th>Image</th>
-                                                <th>Description</th>
+                                                <th>Preview Image</th>
                                                 <th>Action</th>
                                                 
                                             </tr>
@@ -46,9 +45,8 @@
                                                 <td>{{$i++}}</td>
                                                 <td>{{$all_cont->sec_name}}</td>
                                                 <td>{{$all_cont->status}}</td>
-                                                <td><img src="{{ asset($all_cont->image) }}" alt="Product Image" width="100" height="100" class="img-responsive post-image" />
+                                                <td><img src="{{ asset($all_cont->image) }}" alt="Alt Image" width="100" height="100" class="img-responsive post-image" />
                                                 </td>
-                                                <td>{{$all_cont->description}}</td>
                                                 <td><a href="{{url('/admin/sections/update',$all_cont->id)}}" class="action-btn" data-toggle="modal" data-target="#exampleModal{{$all_cont->id}}"><i class="far fa-edit"></i></a>
 
                                                 @csrf
@@ -78,8 +76,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Edit Description</label>
-                            <textarea class="tinymce" name="description">
+                            <label>Edit Video Link</label></br>
+                            <textarea name="description">
                             {{$all_cont->description}}
                                             </textarea>
                         </div>
@@ -112,7 +110,7 @@
                               <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-header">
-                                    <h5 class="text-color">Add Content</h5>
+                                    <h5 class="text-color">Add Video</h5>
                                         </div>
                                         <form action="{{route('section.store')}}" method="POST" enctype="multipart/form-data">
                                             @csrf
@@ -124,7 +122,7 @@
                                         <div class="form-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" name="image" id="image">
-                                                <label class="custom-file-label" for="image">Choose Image</label>
+                                                <label class="custom-file-label" for="image">Choose Preview Image (Optional)</label>
                                             </div>
                                         </div>
 
@@ -139,8 +137,8 @@
                                                         </div>
 
                                             <div class="form-group">
-                                            Enter Description Below<br>
-                                            <textarea class="tinymce" name="description" value="">
+                                            Enter Video Link Below<br>
+                                            <textarea name="description" value="">
                                             </textarea>
                                         </div><br>
 

@@ -22,7 +22,31 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
-      	return view('frontend.frontmain.index',compact('menu', 'sub', 'logo', 'slider'));
+        // sections data
+        //sections all
+        $content2 = DB::table('sections')->
+        where('sec_name','section_2')->where('status','Active')->get();
+        $content3 = DB::table('sections')->
+        where('sec_name','section_3')->where('status','Active')->get();
+        $content4 = DB::table('sections')->
+        where('sec_name','section_4')->where('status','Active')->get();
+        $content5 = DB::table('sections')->
+        where('sec_name','section_5')->where('status','Active')->get();
+        $content6 = DB::table('sections')->
+        where('sec_name','section_6')->where('status','Active')->get();
+        $content7 = DB::table('sections')->
+        where('sec_name','section_7')->where('status','Active')->get();
+        $content8 = DB::table('sections')->
+        where('sec_name','section_8')->where('status','Active')->get();
+        $content9 = DB::table('sections')->
+        where('sec_name','section_9')->where('status','Active')->get();
+        $content10 = DB::table('sections')->
+        where('sec_name','section_10')->where('status','Active')->get();
+
+
+          return view('frontend.frontmain.index',compact('menu', 'sub', 'logo', 'slider',
+          'content2','content3', 'content4', 'content5', 'content6', 'content7', 'content8', 'content9',
+        'content10'));
     }
 
     public function about()

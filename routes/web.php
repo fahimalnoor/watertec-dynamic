@@ -23,6 +23,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/admin/sections/7/collections','sectionsController@collections7')->name('section.7');
     Route::get('/admin/sections/8/videos8','sectionsController@videos8')->name('section.8');
     Route::get('/admin/sections/9/contacts9','sectionsController@contacts9')->name('section.9');
+    Route::get('/admin/sections/10/social','sectionsController@social10')->name('section.10');
 
 
 
@@ -95,7 +96,7 @@ Route::get('/front/collection','websiteController@collection')->name('front.coll
 Route::get('/front/products','websiteController@product')->name('front.products');
 
 //Route for Frontend Menus and Submenus
-Route::get('/about/builtec','websiteController@aboutBuiltec');
+Route::get('/about/builtec','websiteController@aboutBuiltec')->name('front.about_builtec');
 Route::get('/about/watertec','websiteController@aboutWatertec');
 Route::get('/mission','websiteController@mission');
 Route::get('/vision','websiteController@vision');
@@ -103,7 +104,7 @@ Route::get('/values','websiteController@values');
 Route::get('/advantage','websiteController@advantage');
 Route::get('/greenbuilding','websiteController@greenBuilding');
 Route::get('/qc-procedure','websiteController@qcProcedure');
-Route::get('/testimonial','websiteController@testimonial');
+Route::get('/testimonial','websiteController@testimonial')->name('front.testimonial');
 Route::get('/warranty','websiteController@warranty');
 Route::get('/modern-design','websiteController@moderDesign');
 Route::get('/top-down-shut-off','websiteController@topDownShutOff');

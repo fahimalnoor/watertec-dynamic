@@ -6,7 +6,7 @@
           <div class="grid__item">
             <div class="footer-logo">
                                      
-              <a href="index.php">
+              <a href="{{ route('front.index') }}">
                 <img class="normal-footer-logo" src="{{asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/joga-footer-logo_53bbad20-abbf-42cd-8832-0f1d8e25895c_400x9bb8.png?v=1534920452')}}" alt="Joga - Bath Fixtures" />
               </a>
                         
@@ -32,38 +32,18 @@
               <ul class="inline-list social-icons social-links-type-1">
   
     <li>
-      <a style="color:#ffffff;" class="icon-fallback-text twitt hexagon" target="blank" href="#" onmouseover="this.style.color='#1d3750';" onmouseout="this.style.color='#ffffff';" title="Twitter">
-        <span class="fa fa-twitter" aria-hidden="true"></span>       
+      <a style="color:#ffffff;" class="icon-fallback-text youtube hexagon" target="blank" href="https://www.youtube.com/channel/UCcYqynJxjKsgoNSt1jhKo5Q" onmouseover="this.style.color='#1d3750';" onmouseout="this.style.color='#ffffff';" title="Youtube">
+        <span class="fa fa-youtube" aria-hidden="true"></span>       
       </a>
     </li>
   
   
     <li>
-      <a style="color:#ffffff;" class="icon-fallback-text fb hexagon" target="blank" href="#" onmouseover="this.style.color='#1d3750';" onmouseout="this.style.color='#ffffff';" title="Facebook">
+      <a style="color:#ffffff;" class="icon-fallback-text fb hexagon" target="blank" href="https://www.facebook.com/watertec.bd" onmouseover="this.style.color='#1d3750';" onmouseout="this.style.color='#ffffff';" title="Facebook">
         <span class="fa fa-facebook" aria-hidden="true"></span>
         <span class="fallback-text">Facebook</span>
       </a>
     </li>
-  
-  
-    <li>
-      <a style="color:#ffffff;" sclass="icon-fallback-text pin hexagon" target="blank" href="#" onmouseover="this.style.color='#1d3750';" onmouseout="this.style.color='#ffffff';" title="Pinterest">
-        <span class="fa fa-pinterest" aria-hidden="true"></span>        
-      </a>
-    </li>
-  
-  
-    <li>
-      <a style="color:#ffffff;" class="icon-fallback-text google hexagon" target="blank" href="#" onmouseover="this.style.color='#1d3750';" onmouseout="this.style.color='#ffffff';" title="Google+" rel="publisher">
-        <span class="fa fa-google" aria-hidden="true"></span>
-        <span class="fallback-text">Google</span>
-      </a>
-    </li>
-  
-  
-  
-  
-  
   
   
 </ul>

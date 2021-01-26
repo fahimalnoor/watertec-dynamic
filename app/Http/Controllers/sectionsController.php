@@ -84,8 +84,14 @@ class sectionsController extends Controller
         where('sec_name','section_9')->get();
         return view('backend.sections.section_9_contacts',compact('content'));
     } 
-
-
+    public function social10()
+   
+    {   
+        $content = DB::table('sections')->
+        where('sec_name','section_10')->get();
+        return view('backend.sections.section_10_social',compact('content'));
+        return view('frontend.inc.main-footer',compact('content'));
+    } 
 
 
     //create operation here
@@ -106,6 +112,16 @@ class sectionsController extends Controller
         $data['status']=$request->status;
         $data['description']=$request->description;
         DB::table('sections')->insert($data);
+        }
+        else{
+            
+            $data=array();
+    
+            $data['sec_name']=$request->sec_name;
+            $data['status']=$request->status;
+            $data['description']=$request->description;
+            DB::table('sections')->insert($data);
+            
         }
         return redirect()->back(); 
       
