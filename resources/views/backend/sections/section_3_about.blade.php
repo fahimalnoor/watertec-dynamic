@@ -34,7 +34,6 @@
                                                 <th>Name</th>
                                                 <th>Status</th>
                                                 <th>Image</th>
-                                                <th>Description</th>
                                                 <th>Action</th>
                                                 
                                             </tr>
@@ -48,7 +47,6 @@
                                                 <td>{{$all_cont->status}}</td>
                                                 <td><img src="{{ asset($all_cont->image) }}" alt="Product Image" width="100" height="100" class="img-responsive post-image" />
                                                 </td>
-                                                <td>{{$all_cont->description}}</td>
                                                 <td><a href="{{url('/admin/sections/update',$all_cont->id)}}" class="action-btn" data-toggle="modal" data-target="#exampleModal{{$all_cont->id}}"><i class="far fa-edit"></i></a>
 
                                                 @csrf

@@ -78,7 +78,7 @@
 
                         <div class="form-group">
                             <label>Edit Description</label>
-                            <textarea name="description">
+                            <textarea class="tinymce" name="description">
                             {{$all_cont->description}}
                                             </textarea>
                         </div>
@@ -139,7 +139,7 @@
 
                                             <div class="form-group">
                                             Enter Description Below<br>
-                                            <textarea name="description" value="">
+                                            <textarea class="tinymce" name="description" value="">
                                             </textarea>
                                         </div><br>
 

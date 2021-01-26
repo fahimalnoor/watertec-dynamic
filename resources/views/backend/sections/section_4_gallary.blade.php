@@ -77,7 +77,7 @@
 
                         <div class="form-group">
                             <label>Edit Description</label>
-                            <textarea name="description">
+                            <textarea class="tinymce" name="description">
                             {{$all_cont->description}}
                                             </textarea>
                         </div>
@@ -134,11 +134,11 @@
                                                     <input type="radio" id="inactive" name="status" value="Inactive">
                                                     <label for="inactive">Inactive</label><br><br>
                                                     </div>
-                                                        </div>
+                                                    </div>
 
                                             <div class="form-group">
                                             Enter Description Below<br>
-                                            <textarea name="description" value="">
+                                            <textarea class="tinymce" name="description" value="">
                                             </textarea>
                                         </div><br>
 

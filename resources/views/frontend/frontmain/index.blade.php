@@ -69,7 +69,11 @@
               <div class="category_image">                      
                 <img src="{{asset($all_content2->image)}}" alt="Sample Product" />                
               </div>
-                 {!! $all_content2->description !!}
+              <div class="category_text" style="color:#ffffff;"> 
+                                      <br>
+                {!! $all_content2->description !!}
+                  
+              </div>
                  <a href="{{ url('/front/about') }}"  class="small-btn"  style="color:#ffffff">Read More
                  <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                   
@@ -131,29 +135,12 @@
         <div class="grid__item wide--one-half post-large--one-half large--one-whole medium--grid__item small-grid__item">    
           <div class="block-content wow fadeInRight animated">             
              
-             <div class="border-title"> 
-            <h2 style="color:#ffffff;background:#e81a46">Welcome!</h2> 
-            </div>
-               
-                                    
-            <h4 style="color:#1d3750;">THE GLOBAL LEADER OF POLYMER TAP FITTINGS.</h4>        
-              
-
-                                     
-            <p style="color:#3e454c;">We deliver all kind of water supply fittings. Just check out which out you need.</p>        
-             
+             {!! $all_content3->description !!}
 
             
             <a href="{{ route('front.about') }}"  class="btn-line">About Us<i class="fa fa-angle-right" aria-hidden="true"></i>
               <div class="overlay"></div>
             </a>
-            
-
-            
-           
-            
-
-              
             
             <div class="icon">
                           
@@ -171,10 +158,6 @@
                       
             </div>
             
-           
-                     
-             
-
           </div>  
         </div>
       </div>
@@ -234,7 +217,15 @@
           
           
           <img src="{{asset($all_content4->image)}}" alt="Wall Mount Toilet" />
+          <div class="ovrly" style="background:rgba(29, 55, 80, 0.85); "></div>
+          <div class="featured-content">   
+            
           {!! $all_content4->description !!}
+            
+            <a class="btn_line one" href="{{ route('front.products') }}"  style="color:#ffffff">Read More</a>    
+                     
+          </div>  
+          
         @endforeach
       </li>        
    
@@ -252,7 +243,7 @@
           
           @foreach($content5 as $all_content5)
           <div class="item">
-            <a href="#"> <img src="{{ $all_content5->image }}" alt="" /></a>
+            <a <img src="{{ $all_content5->image }}" alt="" /></a>
           </div>
           @endforeach      
           
@@ -279,23 +270,25 @@
         <div class="full-banner-block"> 
           <div class="full-banner-content content-center "> 
 
+          
             <div class="grid__item ">
-                
+            @foreach($content6 as $all_content6)
               <div class=" grid__item wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item">
-              @foreach($content6 as $all_content6)
+              
                 <div class="icon-section wow fadeInUp animated">
                   <a href="{{route('front.products')}}">
                     
                     <div class="icon">
                       <img src="{{ asset($all_content6->image) }}"  style ="border: 5px solid  #e81a46;"/>
                     </div>
-                    {!! $all_content6->description !!}
+                    <span style="color:#fff">{!! $all_content6->description !!}</span>
                     
                   </a>
                 </div>
-                @endforeach
-              </div>              
                 
+              </div>   
+              @endforeach           
+              </div>
             </div>
           </div>
         </div>
@@ -319,40 +312,61 @@
 
 
 </style>
-
-
-
-
-</div><div id="shopify-section-1530083821640" class="shopify-section index-section"><div data-section-id="1530083821640" data-section-type="grid-banner-type-15" class="grid-banner-type-15">   
- <div class="container">    
-   <div class="dt-sc-hr-invisible-large"></div>
-  <div class="grid-uniform">     
-  @foreach($content7 as $all_content7)  
-    <div class="grid__item wide--one-quarter post-large--one-half large--one-half medium--one-half small--grid__item img-hover-effect-3 img-hover-effect wow fadeInUp animated">
-      <a class="banner_half_img" href="{{ url('/front/collection') }}">
-      
-      <img src="{{asset($all_content7->image)}}" />
-                 
-        </a> 
-    </div> 
-    @endforeach
-   
-   <div class="dt-sc-hr-invisible-large"></div>
-  </div>  
 </div>
 
 
-<style>
-  .grid-banner-type-15 .featured-content .btn.four:hover { background: !important;color: !important;}
-  .grid-banner-type-15 .featured-content .btn.three:hover { background:#1d3750 !important; color:#fff !important;}
-  .grid-banner-type-15 .featured-content .btn.one:hover { background: !important;color: !important; }
-  .grid-banner-type-15 .featured-content .btn.two:hover { background: !important;color: !important; }
-  .grid-banner-type-15 .featured-content .offer_text { color:#000; }
-  .grid-banner-type-15 .featured-content p span:before,.grid-banner-type-15 .featured-content p span:after { background:#000; }
 
+<div id="shopify-section-1530083821640" class="shopify-section index-section"><div data-section-id="1530083821640" data-section-type="grid-banner-type-15" class="grid-banner-type-15">   
+ <div class="container">    
+ <style>
+* {
+  box-sizing: relative;
+}
+
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: relative;
+  background-color: transparent;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
+  
+<div class="container">
+ <div class="row">
+ @foreach($content7 as $all_content7)
 
+  <div class="column">
+    <img src="{{ $all_content7->image }}" style="width:100%">
+    <div class="text-block">
+    {!! $all_content7->description !!}
+    </div>
+  </div>
+  
+  @endforeach
+</div>
 
+</div>
+</div>
+</div>
 </div>
 
 <div id="shopify-section-1526542123663" class="shopify-section index-section"><div data-section-id="1526542123663" data-section-type="wide-banner-type-4" class="wide-banner-type-4">  

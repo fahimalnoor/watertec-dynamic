@@ -5,7 +5,7 @@
 <script>
     tinymce.init({
       selector: 'textarea.tinymce',
-      plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker', 
       toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
       toolbar_mode: 'floating',
       tinycomments_mode: 'embedded',
@@ -77,7 +77,7 @@
 
                         <div class="form-group">
                             <label>Edit Description</label>
-                            <textarea name="description">
+                            <textarea class="tinymce" name="description">
                             {{$all_cont->description}}
                                             </textarea>
                         </div>
@@ -138,7 +138,7 @@
 
                                             <div class="form-group">
                                             Enter Description Below<br>
-                                            <textarea name="description" value="">
+                                            <textarea class="tinymce" name="description" value="">
                                             </textarea>
                                         </div><br>
 

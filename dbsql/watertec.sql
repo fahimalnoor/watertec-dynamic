@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 26, 2021 at 04:19 AM
+-- Generation Time: Jan 26, 2021 at 10:03 PM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.3.24
 
@@ -218,25 +218,24 @@ CREATE TABLE `sections` (
 --
 
 INSERT INTO `sections` (`id`, `sec_name`, `image`, `description`, `status`, `updated_at`) VALUES
-(6, 'section_3', 'public/image/imageSection/img-13_27d06db9-016c-4037-aa0a-4ba1183bdffd_1920X15e5.jpg', '<p>Section3 image description here</p>', 'Active', '2021-01-25 15:51:47'),
-(7, 'section_3', 'public/image/imageSection/2020-challenger-50th-anniversary-1.jpg.image.1440.jpg', '<p>section3 about image2 sample</p>', 'Inactive', '2021-01-25 15:52:16'),
-(8, 'section_4', 'public/image/imageSection/17.jpg', '<div class=\"ovrly\" style=\"background:rgba(29, 55, 80, 0.85); \"></div>\r\n                     \r\n          \r\n          <div class=\"featured-content\">   \r\n            \r\n            <h3 style=\"color:#ffffff;\">Wall Mount Toilet</h3>\r\n            \r\n            \r\n            <h6 style=\"color:#ffffff;\">30% OFF</h6>\r\n            \r\n              \r\n            \r\n            <a class=\"btn_line one\" href=\"#\"  style=\"color:#ffffff\">Read More</a>    \r\n                     \r\n          </div>  \r\n          \r\n          <style>\r\n          \r\n          \r\n            .grid-banner-type-22 .btn_line::before {background:#ffffff;}\r\n          \r\n          </style>\r\n          \r\n        </div>', 'Active', '2021-01-25 16:44:20'),
-(9, 'section_4', 'public/image/imageSection/19.jpg', '<div class=\"ovrly\" style=\"background:rgba(29, 55, 80, 0.85); \"></div>\r\n                     \r\n          \r\n          <div class=\"featured-content\">   \r\n            \r\n            <h3 style=\"color:#ffffff;\">Glossy White Vanity</h3>\r\n            \r\n            \r\n            <h6 style=\"color:#ffffff;\">50% OFF</h6>\r\n            \r\n              \r\n            \r\n            <a class=\"btn_line one\" href=\"#\"  style=\"color:#ffffff\">Read More</a>    \r\n                     \r\n          </div>  \r\n          \r\n          <style>\r\n          \r\n          \r\n            .grid-banner-type-22 .btn_line::before {background:#ffffff;}\r\n          \r\n          </style>\r\n          \r\n        </div>', 'Active', '2021-01-25 16:45:52'),
+(6, 'section_3', 'public/image/imageSection/img-13_27d06db9-016c-4037-aa0a-4ba1183bdffd_1920X15e5.jpg', '<h4><span style=\"background-color: #ba372a;\">Welcome To The Watertec!</span><br /><br />THE GLOBAL LEADER OF POLYMER WATER FITTINGS.</h4>\r\n<p>We deliver all kind of water supply fittings. Just check out which out you need.</p>', 'Active', '2021-01-26 12:19:38'),
+(8, 'section_4', 'public/image/imageSection/17.jpg', '<h3><span style=\"background-color: #e03e2d;\">Wall Mount Toilet</span></h3>\r\n<h4><br /><span style=\"color: #ecf0f1;\">30% OFF</span></h4>', 'Active', '2021-01-26 12:29:46'),
+(9, 'section_4', 'public/image/imageSection/19.jpg', '<h3><span style=\"background-color: #ba372a;\">GLOSSY WHITE VANITY!</span></h3>\r\n<p>&nbsp;</p>\r\n<h4><span style=\"color: #ecf0f1;\">50% OFF!</span></h4>', 'Active', '2021-01-26 12:33:29'),
 (10, 'section_5', 'public/image/imageSection/Logo-4_250x250e553.png', NULL, 'Active', '2021-01-25 22:58:02'),
 (11, 'section_5', 'public/image/imageSection/Logo-5_250x25029d0.png', NULL, 'Active', '2021-01-25 22:58:47'),
-(12, 'section_6', 'public/image/imageSection/BASIN-TAP.jpg', '<span style=\"color:#fff\">Basin Tap</span>', 'Active', '2021-01-25 23:14:40'),
-(13, 'section_6', 'public/image/imageSection/BIB-TAP.jpg', '<span style=\"color:#fff\">Bib Tap</span>', 'Active', '2021-01-25 23:15:50'),
-(14, 'section_6', 'public/image/imageSection/BIDET-index.jpg', '<span style=\"color:#fff\">Bidet</span>', 'Active', '2021-01-25 17:33:16'),
-(15, 'section_7', 'public/image/imageSection/img-22_8f86d3d1-cdf6-401a-8fae-356058847be3_1920Xb42f.jpg', '<div class=\"featured-content featured-content-one\">  \r\n\r\n        \r\n        <h2 style=\"color:#000000\">GREAT COLLECTIONS</h2>\r\n        \r\n        \r\n        <h3 style=\"color:#000\">Special Solution</h3>\r\n        \r\n        \r\n        <p style=\"color:#000\">Fashion Undefined</p>    \r\n                 \r\n      </div>', 'Active', '2021-01-25 17:59:48'),
-(16, 'section_7', 'public/image/imageSection/img-21_1920Xe297.jpg', '<div class=\"featured-content featured-content-one\">  \r\n\r\n        \r\n        <h2 style=\"color:#000000\">GREAT COLLECTIONS</h2>\r\n        \r\n        \r\n        <h3 style=\"color:#000\">Special Solution</h3>\r\n        \r\n        \r\n        <p style=\"color:#000\">Fashion Undefined</p>    \r\n                 \r\n      </div>', 'Active', '2021-01-25 18:04:53'),
-(17, 'section_7', 'public/image/imageSection/img-20_1920X5a1e.jpg', NULL, 'Active', '2021-01-25 23:55:38'),
+(12, 'section_6', 'public/image/imageSection/BASIN-TAP.jpg', '<h4><span style=\"color: #ecf0f1;\">Basin Tap</span></h4>', 'Active', '2021-01-26 12:41:00'),
+(13, 'section_6', 'public/image/imageSection/BIB-TAP.jpg', '<p><span style=\"color: #ecf0f1;\">Bib Tap</span></p>', 'Active', '2021-01-26 12:52:11'),
+(14, 'section_6', 'public/image/imageSection/BIDET-index.jpg', '<h3><span style=\"color: #ecf0f1;\">Bidet</span></h3>', 'Active', '2021-01-26 12:52:38'),
+(15, 'section_7', 'public/image/imageSection/img-22_8f86d3d1-cdf6-401a-8fae-356058847be3_1920Xb42f.jpg', '<h2><span style=\"background-color: #ba372a;\">Great Collections!</span></h2>\r\n<h3><span style=\"background-color: #236fa1;\">Special Solution!</span></h3>\r\n<p><br />Fashion Undefined!</p>', 'Active', '2021-01-26 13:06:50'),
+(16, 'section_7', 'public/image/imageSection/img-21_1920Xe297.jpg', '<h2><span style=\"background-color: #ba372a;\">Great Collections!</span></h2>\r\n<h3><span style=\"background-color: #236fa1;\">Special Solution!</span></h3>\r\n<p><br />Fashion Undefined!</p>', 'Active', '2021-01-26 14:54:29'),
+(17, 'section_7', 'public/image/imageSection/img-20_1920X5a1e.jpg', '<h2><span style=\"background-color: #ba372a;\">Great Collections!</span></h2>\r\n<h3><span style=\"background-color: #236fa1;\">Special Solution!</span></h3>\r\n<p><br />Fashion Undefined!</p>', 'Active', '2021-01-26 14:51:42'),
 (18, 'section_8', NULL, 'https://www.youtube.com/embed/7uqVctI21x0', 'Active', '2021-01-25 18:48:02'),
-(20, 'section_9', 'public/image/imageSection/icon-1_0617992a-a889-4b38-9316-83fd79c4f651_1920Xac70.png', '<div class=\"support_text\"> \r\n                \r\n              <h5 style=\"color:#ffffff;\">CALL TODAY</h5>\r\n               \r\n                \r\n              <p style=\"color:#ffffff;\" class=\"desc\">+ 88 017 6666 5100</p>\r\n               \r\n            </div>', 'Active', '2021-01-25 19:13:00'),
-(21, 'section_9', 'public/image/imageSection/icon-2_9c205de7-333f-4b43-bdd0-38c1204ebf4e_1920X8f9c.png', '<div class=\"support_text\"> \r\n                \r\n              <h5 style=\"color:#ffffff;\">CALL SALES </h5>\r\n               \r\n                \r\n              <p style=\"color:#ffffff;\" class=\"desc\">+ 88 017 6666 5101-05</p>\r\n               \r\n            </div>', 'Active', '2021-01-26 01:15:25'),
-(22, 'section_9', 'public/image/imageSection/icon-3_c9ab47d1-e5df-487f-b7a6-13b2f51573af_1920X7034.png', '<div class=\"support_text\"> \r\n                \r\n              <h5 style=\"color:#ffffff;\">EMAIL</h5>\r\n               \r\n                \r\n              <p style=\"color:#ffffff;\" class=\"desc\">watertecbd@gmail.com</p>\r\n               \r\n            </div>', 'Active', '2021-01-26 01:16:08'),
-(27, 'section_2', 'public/image/imageSection/kazumi.jpg', '<div class=\"category_text\"> \r\n                                      \r\n                <h4 style=\"color:#ffffff;background:#e81a46\">Kazumi</h4>\r\n                                  \r\n\r\n                  \r\n                <p style=\"color:#ffffff;\">Kazumi</p>\r\n                   \r\n\r\n                 \r\n              \r\n                 \r\n\r\n              </div>', 'Active', '2021-01-25 21:10:35'),
-(28, 'section_2', 'public/image/imageSection/img-10_270x2702bf4.jpg', '<div class=\"category_text\"> \r\n                                      \r\n                <h4 style=\"color:#ffffff;background:#1d3750\">Roma</h4>\r\n                                  \r\n\r\n                  \r\n              \r\n                   \r\n\r\n                 \r\n                \r\n                 \r\n\r\n              </div>', 'Active', '2021-01-25 21:15:06'),
-(29, 'section_2', 'public/image/imageSection/img-11_270x270394f.jpg', '<div class=\"category_text\"> \r\n                                      \r\n                <h4 style=\"color:#ffffff;background:#e81a46\">Mixer</h4>\r\n                                  \r\n\r\n                  \r\n                <p style=\"color:#ffffff;\">Category-3 Tap</p>\r\n                   \r\n\r\n                 \r\n\r\n              </div>', 'Active', '2021-01-26 03:17:17');
+(21, 'section_9', 'public/image/imageSection/icon-2_9c205de7-333f-4b43-bdd0-38c1204ebf4e_1920X8f9c.png', '<p><span style=\"color: #ecf0f1;\">CALL SALES!</span><br /><br /><span style=\"color: #ecf0f1;\">+88 017 6666 5101-05</span></p>', 'Active', '2021-01-26 14:58:49'),
+(22, 'section_9', 'public/image/imageSection/icon-3_c9ab47d1-e5df-487f-b7a6-13b2f51573af_1920X7034.png', '<p><span style=\"color: #ecf0f1;\">EMAIL</span><br /><br /><span style=\"color: #ecf0f1;\">watertecbd@gmail.com</span></p>', 'Active', '2021-01-26 15:02:26'),
+(27, 'section_2', 'public/image/imageSection/kazumi.jpg', '<p><strong>Title: Kazumi</strong><br /><br />This is the description for kazumi</p>', 'Active', '2021-01-26 12:09:01'),
+(28, 'section_2', 'public/image/imageSection/img-10_270x2702bf4.jpg', '<div><strong>Title: Roma</strong><br /><br />Description for Roma</div>', 'Active', '2021-01-26 12:08:30'),
+(29, 'section_2', 'public/image/imageSection/img-11_270x270394f.jpg', '<p><span style=\"background-color: #e03e2d;\">Title: Mixer</span></p>\r\n<p>This is the description for the mixer tap</p>', 'Active', '2021-01-26 12:11:27'),
+(30, 'section_9', 'public/image/imageSection/icon-1_0617992a-a889-4b38-9316-83fd79c4f651_1920Xac70.png', '<p><span style=\"color: #ecf0f1;\">CALL TODAY</span><br /><br /><span style=\"color: #ecf0f1;\">+ 88 017 6666 5100</span></p>', 'Active', '2021-01-26 15:01:48');
 
 -- --------------------------------------------------------
 
@@ -261,7 +260,7 @@ CREATE TABLE `sliders` (
 INSERT INTO `sliders` (`id`, `image`, `status`, `description`, `code`, `created_at`, `updated_at`) VALUES
 (8, 'public/image/imageSlider/slide1.jpg', 'Active', '<p>first slide</p>', '<div class=\"slick-list slider_style_2\">  \r\n        <img src=\"{{ $all_slide[\'image\'] }}\"  class=\"slide-img medium-down--hide\" alt=\"\" />\r\n<div class=\"slider-content slider-content-bg medium-down--hide\" style=\"top: 48%;\">\r\n  <div class=\"slide_left\" style=\"\">\r\n\r\n    \r\n    <h5 class=\"slide-text animated \"\r\n        style=\"display:inline-block;\r\n               \r\n               font-size: 20px;\r\n               \r\n               \r\n               color:#ffffff;\r\n                \r\n               \r\n               background:#e81a46;\r\n                \">\r\n      IT\'S HOW YOU LIVE\r\n    </h5>\r\n    \r\n\r\n    \r\n    <h2 class=\"slide-heading animated \"\r\n        style=\" \r\n               font-size: 45px;\r\n               \r\n               \r\n               color:#000;\r\n               \">\r\n      LOTS OF LUXURY                   \r\n    </h2>\r\n    \r\n    \r\n    <h4 class=\" slide-sub-heading-2 animated \"\r\n        style=\"\r\n               font-size: 45px;\r\n               \r\n               \r\n               color:#000;\r\n               \">\r\n      IN A LITTLE SPACE                   \r\n    </h4>\r\n    \r\n \r\n  \r\n     </div>\r\n</div>\r\n\r\n\r\n        <style> \r\n          .slider_style_2 .slide-offer-text span {color:#000!important;}\r\n           .slider_style_2 .btn:hover {color:#ffffff!important;background:#e81a46!important;}\r\n          @media screen and (min-width: 320px) and (max-width: 767px) {\r\n\r\n            .slider_style_2 .slider-content {background:rgba(255, 255, 255, 0.7);}\r\n          }\r\n        </style>\r\n      </div>', NULL, '2021-01-24 06:39:24'),
 (9, 'public/image/imageSlider/slide2.jpg', 'Active', NULL, NULL, NULL, '2021-01-23 13:12:58'),
-(13, 'public/image/imageSlider/3.jpg', 'Active', NULL, NULL, NULL, '2021-01-24 05:19:01');
+(13, 'public/image/imageSlider/3.jpg', 'Inactive', NULL, NULL, NULL, '2021-01-26 04:57:34');
 
 -- --------------------------------------------------------
 
@@ -287,7 +286,8 @@ CREATE TABLE `subcategories` (
 INSERT INTO `subcategories` (`id`, `subcat_name`, `cat_id`, `subcat_link`, `subcat_status`, `created_at`, `updated_at`, `description`) VALUES
 (1, 'basin tap', 1, '', '', '2021-01-16 22:01:41', '2021-01-16 22:01:41', 'This is the subcategory named basin tap which is under the category of tap.'),
 (2, 'Sink Tap', 1, NULL, 'Active', '2021-01-16 22:41:35', '2021-01-16 22:41:35', NULL),
-(3, 'Sample tap', 1, NULL, 'Active', '2021-01-19 17:40:30', '2021-01-19 17:40:30', NULL);
+(3, 'Sample tap', 1, NULL, 'Active', '2021-01-19 17:40:30', '2021-01-19 17:40:30', NULL),
+(4, 'Sample tap 2', 1, NULL, 'Inactive', '2021-01-26 11:03:40', '2021-01-26 11:03:40', NULL);
 
 -- --------------------------------------------------------
 
@@ -347,7 +347,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'fahim', 'fahimalnoor1@gmail.com', NULL, '$2y$10$K6XuOXpwEQFFMVgx9OOmSe3DbTzlchtgqiXAA66KAJyPxsFjZHJky', 'oD10jA3Qu2rJri87zZrxE7ATFrS9HZlALhAeeXDbzmvW8StyF7f5ydpVue6a', '2021-01-14 07:31:53', '2021-01-14 07:31:53');
+(1, 'fahim', 'fahimalnoor1@gmail.com', NULL, '$2y$10$K6XuOXpwEQFFMVgx9OOmSe3DbTzlchtgqiXAA66KAJyPxsFjZHJky', 'jXU7cV36jKr8gs7PlvsjZh8PvFMwL1oeReF6li8DZWjb93JHQ6G8cC1q3qpd', '2021-01-14 07:31:53', '2021-01-14 07:31:53');
 
 --
 -- Indexes for dumped tables
@@ -495,7 +495,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `sections`
 --
 ALTER TABLE `sections`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `sliders`
@@ -507,7 +507,7 @@ ALTER TABLE `sliders`
 -- AUTO_INCREMENT for table `subcategories`
 --
 ALTER TABLE `subcategories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `submenus`

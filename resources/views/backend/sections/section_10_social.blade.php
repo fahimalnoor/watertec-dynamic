@@ -77,7 +77,7 @@
 
                         <div class="form-group">
                             <label>Edit Link</label><br>
-                            <textarea name="description">
+                            <textarea class="tinymce" name="description">
                             {{$all_cont->description}}
                                             </textarea>
                         </div>
@@ -137,7 +137,7 @@
 
                                             <div class="form-group">
                                             Enter Link Below<br>
-                                            <textarea name="description" value="">
+                                            <textarea class="tinymce" name="description" value="">
                                             </textarea>
                                         </div><br>
 
