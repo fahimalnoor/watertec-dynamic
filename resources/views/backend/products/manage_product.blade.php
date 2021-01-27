@@ -21,12 +21,7 @@
                                                 <th>SL No.</th>
                                                 <th>Product Name</th>
                                                 <th>Category</th>
-                                                <th>Price</th>
-                                                <th>Details</th>
-                                                <th>Size</th>
-                                                <th>Color</th>
-                                                <th>Brand</th>
-                                                <th>Availability</th>
+                                                <th>Status</th>
                                                 <th>Cover Image</th>
                                                 <th>Action</th>
                                                 
@@ -39,13 +34,8 @@
                                                 <td>{{$i++}}</td>
                                                 <td>{{$all_product->name}}</td>
                                                 <td>{{$all_product->under_cat}}</td>
-                                                <td>{{$all_product->price}}</td>
-                                                <td>{{$all_product->details}}</td>
-                                                <td>{{$all_product->size}}</td>
-                                                <td>{{$all_product->color}}</td>
-                                                <td>{{$all_product->brand}}</td>
-                                                <td>{{$all_product->product_status}}</td>
-                                                <td><img src="{{ asset($all_product->image) }}" alt="post-image" width="100" height="100" class="img-responsive post-image" />
+                                                <td>{{$all_product->status}}</td>
+                                                <td><img src="{{ asset($all_product->image) }}" alt="product-image" width="100" height="100" class="img-responsive post-image" />
                                                 </td>
                                                 <td><a href="{{url('/admin/products/update',$all_product->id)}}" class="action-btn" data-toggle="modal" data-target="#exampleModal{{$all_product->id}}"><i class="far fa-edit"></i></a>
 
@@ -75,36 +65,15 @@
 
                         </div>
                         <div class="form-group">
-                            <label>Edit Product Price</label>
-                            <input type="text" name="price" class="form-control" placeholder="Edit Product Price" value="{{$all_product->price}}">
+                            <label>Edit URL</label>
+                            <input type="url" name="url" class="form-control" placeholder="Edit URL" value="{{$all_product->url}}">
 
                         </div>
-                        <div class="form-group">
-                            <label>Edit Product Color</label>
-                            <input type="text" name="color" class="form-control" placeholder="Edit Product Color" value="{{$all_product->color}}">
-
-                        </div>
-                        <div class="form-group">
-                                            <label>Edit Product Size</label>
-                                            <select class="form-control select2" name="size" style="width: 100%;">
-                                                <option >{{$all_product->size}}</option> 
-                                                <option value="20">20</option>
-                                                <option value="22">22</option>
-                                                <option value="24">24</option>
-                                                <option value="26">26</option>
-                                            </select>
-                                        </div>
-                        <div class="form-group">
-                            <label>Edit Product Brand</label>
-                            <input type="text" name="brand" class="form-control" placeholder="Edit Product Brand" value="{{$all_product->brand}}">
-
-                        </div>
-
-                         <div class="form-group" >
+                        <div class="form-group" >
                                             <p>Edit Status:</p>
-                                        <input type="radio" id="active" name="product_status" value="Active">
+                                        <input type="radio" id="active" name="status" value="Active">
                                         <label for="active">Active</label><br>
-                                        <input type="radio" id="inactive" name="product_status" value="Inactive">
+                                        <input type="radio" id="inactive" name="status" value="Inactive">
                                         <label for="inactive">Inactive</label><br>
                         </div>
                         <div class="modal-image text-center">

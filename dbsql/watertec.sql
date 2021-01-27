@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 26, 2021 at 10:03 PM
+-- Generation Time: Jan 27, 2021 at 01:46 AM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.3.24
 
@@ -56,7 +56,10 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `cat_name`, `cat_status`, `created_at`, `updated_at`) VALUES
-(1, 'Tap', NULL, NULL, NULL);
+(1, 'Tap', 'Active', NULL, '2021-01-26 18:42:28'),
+(2, 'Bidets', 'Active', NULL, NULL),
+(3, 'Shower', 'Active', NULL, NULL),
+(4, 'Others', 'Active', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -187,16 +190,20 @@ CREATE TABLE `products` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `under_cat` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `price` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `details` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `size` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `color` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `brand` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `product_status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `url` varchar(300) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `name`, `under_cat`, `url`, `status`, `image`, `created_at`, `updated_at`) VALUES
+(7, 'basin tap', 'Tap', 'http://localhost/watertec-dynamic/basin-tap', 'Active', 'public/image/imageProduct/BASIN-TAP.jpg', '2021-01-26 18:27:04', '2021-01-26 18:27:04'),
+(8, 'bip tap', 'Tap', 'http://localhost/watertec-dynamic/bip-tap', 'Active', 'public/image/imageProduct/BIB-TAP.jpg', '2021-01-26 18:44:17', '2021-01-26 18:44:17');
 
 -- --------------------------------------------------------
 
@@ -311,7 +318,7 @@ CREATE TABLE `submenus` (
 --
 
 INSERT INTO `submenus` (`id`, `sub_name`, `menu_id`, `sub_link`, `sub_status`, `created_at`, `updated_at`, `description`) VALUES
-(6, 'About Watertec', 1, 'http://localhost/assignment/front/about', 'Active', NULL, '2020-11-02 13:39:09', ''),
+(6, 'About Watertec', 1, 'http://localhost/watertec-dynamic/front/about', 'Active', NULL, '2020-11-02 13:39:09', ''),
 (7, 'Mission', 1, 'http://localhost/assignment/front/about', 'Active', NULL, '2020-11-02 13:39:26', ''),
 (8, 'Vission', 1, 'http://localhost/assignment/front/about', 'Active', NULL, '2020-11-02 13:39:40', ''),
 (9, 'Fusion', 6, 'http://localhost/assignment/front/collection', 'Active', NULL, '2020-11-02 13:49:21', ''),
@@ -453,7 +460,7 @@ ALTER TABLE `blogs`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -489,7 +496,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `sections`

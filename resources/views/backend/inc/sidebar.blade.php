@@ -250,13 +250,6 @@
                         </li>
 
                         <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-envelope-open"></i>
-                                <p>
-                                    Contact Us
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="{{ route('contact.index') }}" class="nav-link">

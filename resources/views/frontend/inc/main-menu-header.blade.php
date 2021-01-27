@@ -296,25 +296,14 @@
           <ul class="dropdown">
             
             <!-- Menu level 3 -->
+            @foreach($product as $all_product)
             <li>
-              <a href="{{ url('/basin-tap') }}" >
-                Basin Tap
+              <a href="{{ $all_product->url }}" >
+                {{ $all_product->name }}
               </a>
             </li>
+            @endforeach
             
-            <!-- Menu level 3 -->
-            <li>
-              <a href="{{ url('/sink-tap') }}" >
-                Sink Tap
-              </a>
-            </li>
-            
-            <!-- Menu level 3 -->
-            <li>
-              <a href="{{ url('/bip-tap') }}" >
-                Bib Tap
-              </a>
-            </li>
             
             
           </ul>

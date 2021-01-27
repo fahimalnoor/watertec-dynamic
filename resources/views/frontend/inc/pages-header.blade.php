@@ -40,7 +40,7 @@
 <h1 class="grid__item wide--one-sixth post-large--one-sixth large--one-sixth site-header__logo" itemscope itemtype="http://schema.org/Organization">
   
     
-    <a href="index.html">
+    <a href="{{ url('/')}}">
       <img class="normal-logo" src="{{asset('public/frontend/cdn/s/files/1/0045/0523/9670/t/3/assets/logo7d29.png?v=15550266324526685800')}}" alt="Watertec" itemprop="logo">
     </a>
     

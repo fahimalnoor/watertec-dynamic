@@ -436,6 +436,6 @@
 
 </div>
 
-</div><!-- END content_for_index -->
+</div>
 
 @endsection

@@ -29,6 +29,16 @@
                                                 @endforeach
                                             </select>
                                         </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="url" name="url" placeholder="Enter URL">
+                                        </div>
+                                        <div class="form-group" >
+                                            <p>Edit Status:</p>
+                                        <input type="radio" id="active" name="status" value="Active">
+                                        <label for="active">Active</label><br>
+                                        <input type="radio" id="inactive" name="status" value="Inactive">
+                                        <label for="inactive">Inactive</label><br>
+                                            </div>
                                              <div class="form-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" name="image" id="image">

@@ -28,8 +28,6 @@ class productController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'price' => 'required',
-            'color' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
@@ -44,29 +42,20 @@ class productController extends Controller
         $product = new product();
         $product->name = $request->name;
         $product->under_cat = $request->under_cat;
-        $product->price = $request->price;
-        $product->details = $request->details;
-        $product->size = $request->size;
-        $product->color = $request->color;
-        $product->brand = $request->brand;
-        $product->product_status = $request->product_status;
-        $product->image = $request->imgUrl;
+        $product->url = $request->url;
+        $product->image = $imgUrl;
+        $product->status=$request->status;
         $product->save();
         return redirect()->route('product.manage')
                         ->with('success','Product added Successfully.');
         }
-        $product = new Product();
-        $product->name = $request->name;
-        $product->under_cat = $request->under_cat;
-        $product->price = $request->price;
-        $product->details = $request->details;
-        $product->size = $request->size;
-        $product->color = $request->color;
-        $product->brand = $request->brand;
-        $product->product_status = $request->product_status;
-        $blog->save();
-        return redirect()->route('product.manage')
-                        ->with('success','Product added Successfully.');
+        // $product = new Product();
+        // $product->name = $request->name;
+        // $product->under_cat = $request->under_cat;
+        // $product->image = $request->image;
+        // $blog->save();
+        // return redirect()->route('product.manage')
+        //                 ->with('success','Product added Successfully.');
         
     } 
 
@@ -81,13 +70,10 @@ class productController extends Controller
     {  
        $product=Product::find($request->id);
         $product->name=$request->name;
+        $product->url=$request->url;
+        $product->status=$request->status;
         $product->under_cat=$request->under_cat;
-        $product->price=$request->price;
-        $product->details=$request->details;
-        $product->size=$request->size;
-        $product->color=$request->color;
-        $product->brand=$request->brand;
-        $product->product_status=$request->product_status;
+        $product->save();
         return redirect()->back();
     } 
 }
