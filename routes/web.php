@@ -115,7 +115,7 @@ Route::get('/bidet','websiteController@bidet');
 Route::get('/hand-bidet','websiteController@handBidet');
 Route::get('/hand-shower','websiteController@handShower');
 Route::get('/shower-arm','websiteController@showerArm');
-Route::get('/connection-hoses','websiteController@connetionHoses');
+Route::get('/connection-hoses','websiteController@connectionHoses');
 Route::get('/mixer','websiteController@mixer');
 Route::get('/stop-valve','websiteController@stopValve');
 Route::get('toilet','websiteController@toilet');

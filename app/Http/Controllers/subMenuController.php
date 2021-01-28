@@ -24,6 +24,7 @@ class subMenuController extends Controller
         $data['sub_name']=$request->sub_name;
         $data['menu_id']=$request->menu_id;
         $data['sub_link']=$request->sub_link;
+        $data['description']=$request->description;
         $data['sub_status']=$request->sub_status;
         DB::table('submenus')->insert($data);     
         return redirect()->back();
@@ -43,6 +44,7 @@ class subMenuController extends Controller
         $submenu=SubMenu::find($request->id);
         $submenu->sub_name=$request->sub_name;
         $submenu->menu_id=$request->menu_id;
+        $submenu->description=$request->description;
         $submenu->sub_link=$request->sub_link;
         $submenu->sub_status=$request->sub_status;
         $submenu->save();

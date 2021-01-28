@@ -1,5 +1,22 @@
 @extends('backend.back_master')
 @section('content')
+
+<script src="https://cdn.tiny.cloud/1/o1kj5zziqu1q8rlav7c9torfbau90d0jofo6gwe495eg18kf/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+      selector: 'textarea.tinymce',
+      plugins: 'a11ychecker autoresize inline image textpattern imagetools advcode casechange formatpainter linkchecker autolink lists advlist checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker', 
+      toolbar: 'a11ycheck addcomment inline showcomments casechange checklist code imagetools advlist formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      advlist_bullet_styles: 'circle',
+      images_upload_url: 'postAcceptor.php',
+      image_advtab: true,
+      automatic_uploads: false,
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+   });
+  </script>
+
 <div class="wrapper">
 	<div class="content-wrapper">
             <div class="content">
@@ -21,6 +38,7 @@
                                                 <th>SL No.</th>
                                                 <th>Name</th>
                                                 <th>Under Menu</th>
+                                                <th>Description</th>
                                                 <th>Link</th>
                                                 <th>Status</th>
                                                 <th>Action</th>
@@ -34,6 +52,7 @@
                                                 <td>{{$i++}}</td>
                                                 <td>{{$all_sub->sub_name}}</td>
                                                 <td>{{$all_sub->menu_id}}</td>
+                                                <td>{{str_limit($all_sub->description, 10)}}</td>
                                                 <td>{{str_limit($all_sub->sub_link, 10)}}</td>
                                                 <td>{{$all_sub->sub_status}}</td>
                                                 <td><a href="{{url('/admin/submenu/update',$all_sub->id)}}" class="action-btn" data-toggle="modal" data-target="#exampleModal{{$all_sub->id}}"><i class="far fa-edit"></i></a>
@@ -71,6 +90,12 @@
                                                 @endforeach
                                             </select>
                                         </div>
+                        <div class="form-group">
+                            <label>Edit Description</label>
+                            <textarea class="tinymce" name="description">
+                            {{$all_sub->description}}
+                                            </textarea>
+                        </div>
                         <div class="form-group">
                             <label>Edit Sub-Menu Link</label>
                             <input type="text" name="sub_link" class="form-control" placeholder="Edit Sub-Menu Link" value="{{$all_sub->sub_link}}">
@@ -124,6 +149,12 @@
                                             </select>
                                         </div>
                                         <div class="form-group">
+                                            Enter Description Below<br>
+                                            <textarea class="tinymce" name="description" value="">
+                                            </textarea>
+                                        </div><br>
+                                        
+                                          <div class="form-group">
                                             <input type="text" class="form-control" id="sub_link" name="sub_link" placeholder="Enter Sub Menu Link">
                                         </div><br>
                                         <div class="form-group" >

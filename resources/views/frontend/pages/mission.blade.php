@@ -32,52 +32,23 @@
       
         
       <div class="section-one wow fadeIn animated grid-banner-left">
-        <div class="grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item"> 
-          <div class="ovrly09 overlay-grid-1531308458715" style="">
-            
-            
-            <img src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/mission.jpg?v=1532344108" alt="Bathroom Bath Tub') }}" />
-            <div class="overlay"></div>
-                       
-            
-          </div>
-        </div>
-        <div class="grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item">    
-          <div class="block-content"> 
+        
             
              
-            <span class="icon-bell icons"  style="color:#e81a46"></span>
+            
               
-            
-            
-                                    
-            <h1 class="small-title">Mission</h1>        
-               
-           
-                                     
-            <p>Our mission is to serve the customer by offering high quality innovative products at affordable price to build a life time relationship with the customer.</p>
-
-             
-             
-            
-          </div>  
-        </div>
+            @foreach($sub as $all_sub)
+            <br>
+            <h1><span class="icon-bell icons"  style="color:#e81a46"></span><h1>
+              {!! $all_sub->description !!}
+              
+            @endforeach
+          
       </div>
       
-      
-      
-      
-           
-      
-      
-      
-      
+     
       <style>
         
-        
-         
-          
-      
   
         .grid-banner-type-6 .ovrly09.overlay-grid-1531308458715::before  {background:#e81a46;}
   

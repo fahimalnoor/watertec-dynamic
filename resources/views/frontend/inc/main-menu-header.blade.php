@@ -304,8 +304,6 @@
             </li>
             @endforeach
             
-            
-            
           </ul>
           
         </div>

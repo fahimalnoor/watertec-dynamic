@@ -69,7 +69,8 @@ class websiteController extends Controller
    
     {
         $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'About Builtec')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -83,7 +84,8 @@ class websiteController extends Controller
     public function aboutWatertec()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'About Watertec')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -96,7 +98,8 @@ class websiteController extends Controller
     public function mission()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Mission')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -109,7 +112,8 @@ class websiteController extends Controller
     public function vision()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Vision')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -122,7 +126,8 @@ class websiteController extends Controller
     public function values()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Values')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -135,7 +140,8 @@ class websiteController extends Controller
     public function advantage()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Advantage')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -148,7 +154,8 @@ class websiteController extends Controller
     public function greenBuilding()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Green Building')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -161,7 +168,8 @@ class websiteController extends Controller
     public function qcProcedure()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'QC Procedure')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -174,7 +182,8 @@ class websiteController extends Controller
     public function testimonial()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Testimonial')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -188,7 +197,8 @@ class websiteController extends Controller
     public function warranty()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Warranty')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -201,7 +211,8 @@ class websiteController extends Controller
     public function modernDesign()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Modern Design')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -214,7 +225,8 @@ class websiteController extends Controller
     public function topDownShutOff()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Top Down Shut Off')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -227,7 +239,8 @@ class websiteController extends Controller
     public function fusion()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Fusion')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -240,7 +253,8 @@ class websiteController extends Controller
     public function dismental()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Dismental')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -253,7 +267,8 @@ class websiteController extends Controller
     public function basinTap()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Basin Tap')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -267,7 +282,8 @@ class websiteController extends Controller
     public function sinkTap()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Sink Tap')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -280,7 +296,8 @@ class websiteController extends Controller
     public function bipTap()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Bip Tap')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -293,7 +310,8 @@ class websiteController extends Controller
     public function bidet()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Bidet')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -306,7 +324,8 @@ class websiteController extends Controller
     public function handBidet()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Hand Bidet')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -319,7 +338,8 @@ class websiteController extends Controller
     public function handShower()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Hand Shower')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -332,7 +352,8 @@ class websiteController extends Controller
     public function showerArm()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Shower Arm')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -342,10 +363,11 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         return view('frontend.product.shower_arm',compact('menu', 'product', 'sub', 'logo', 'slider'));
     }
-    public function connetionHoses()
+    public function connectionHoses()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Connection Hoses')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -358,7 +380,8 @@ class websiteController extends Controller
     public function mixer()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Mixer')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -371,7 +394,8 @@ class websiteController extends Controller
     public function stopValve()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Stop Valve')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -384,7 +408,8 @@ class websiteController extends Controller
     public function toilet()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Toilet')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -397,7 +422,8 @@ class websiteController extends Controller
     public function award()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Award')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -410,7 +436,8 @@ class websiteController extends Controller
     public function csr()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'CSR')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -423,7 +450,8 @@ class websiteController extends Controller
     public function exhibition()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Exhibition')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -436,7 +464,8 @@ class websiteController extends Controller
     public function meetPlumber()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Meet Plumber')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -449,7 +478,8 @@ class websiteController extends Controller
     public function resource()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Resource')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -462,7 +492,8 @@ class websiteController extends Controller
     public function media()
    
     {   $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Submenus')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
@@ -478,7 +509,7 @@ class websiteController extends Controller
     public function contact()
    
     {
-        $sub = DB::table('submenus')->
+        $sub = DB::table('menus')->
         where('sub_status', 'Active')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
@@ -495,7 +526,8 @@ class websiteController extends Controller
    
     {
         $sub = DB::table('submenus')->
-        where('sub_status', 'Active')->get();
+        where('sub_status', 'Active')->
+        where('sub_name', 'Product')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();

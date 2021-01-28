@@ -20,58 +20,27 @@
     
 
       
-    <main class="">  
+  <main class="">  
       
-        <div class="grid__item">           
-          <div class="grid">
-  <div class="grid__item">  
-     <div id="shopify-section-grid-banner-type-6" class="shopify-section index-section"><div data-section-id="grid-banner-type-6" data-section-type="grid-banner-type-6" class="grid-banner-type-6">  
-  <div class="container">
-    <div class="grid-uniform">        
+      <div class="grid__item">           
+        <div class="grid">
+<div class="grid__item">  
+   <div id="shopify-section-grid-banner-type-6" class="shopify-section index-section"><div data-section-id="grid-banner-type-6" data-section-type="grid-banner-type-6" class="grid-banner-type-6">  
+<div class="container">
+  <div class="grid-uniform">        
+          
+    
+      
+    <div class="section-one wow fadeIn animated grid-banner-left">
+      
+          @foreach($sub as $all_sub)
+          <br>
+          <h1><span class="icon-bell icons"  style="color:#e81a46"></span><h1>
+            {!! $all_sub->description !!}
             
-      
+          @endforeach
         
-      <div class="section-one wow fadeIn animated grid-banner-left">
-        <div class="grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item"> 
-          <div class="ovrly09 overlay-grid-1531308458715" style="">
-            
-            
-            <img src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/vission.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-            <div class="overlay"></div>
-                       
-            
-          </div>
-        </div>
-        <div class="grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item">    
-          <div class="block-content"> 
-            
-             
-            <span class="icon-bell icons"  style="color:#e81a46"></span>
-              
-            
-            
-                                    
-            <h1 class="small-title">Vision</h1>        
-               
-           
-                                     
-            <p>Our vision serves a road map and guides every aspects of our business to accomplish the continuous sustainable quality growth.</p>
-
-             
-             
-            
-          </div>  
-        </div>
-      </div>
-      
-      
-      
-      
-           
-      
-      
-      
-      
+    </div>
       <style>
         
         

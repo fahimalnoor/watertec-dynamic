@@ -32,68 +32,18 @@
       
         
       <div class="section-one wow fadeIn animated grid-banner-left">
-        <div class="grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item"> 
-          <div class="ovrly09 overlay-grid-1531308458715" style="">
-            
-            
-            <img style="height: 705px;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/img-13_27d06db9-016c-4037-aa0a-4ba1183bdffd_1920X15e5.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-            <div class="overlay"></div>
-                       
-            
-          </div>
-        </div>
-        <div class="grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item">    
-          <div class="block-content"> 
+        
+        
             
              
             <span class="icon-bell icons"  style="color:#e81a46"></span>
               
+             @foreach($sub as $all_sub)                 
+            <h1 class="small-title">{{ $all_sub->sub_name }}</h1>  
+            {!! $all_sub->description !!}      
             
-            
-                                    
-            <h1 class="small-title">WATERTEC</h1>        
-                                 
-            <p>is involved in the manufacturing of plumbing products and bathroom 
-accessories particularly those that are innovative and technically 
-advanced. We are the largest polymer taps and valves manufacturer in 
-Asia. We have two manufacturing plants, one in Malaysia and the other in
- India. We manufacture more than 7 million fittings in a year and these 
-are distributed worldwide.
-The Range of WATERTEC products cater for a full spectrum of customers, 
-ranging from contractors of home &amp; Building, DIY enthusiast and 
-building maintenance providers. Ous products offer clever solutions to 
-existing plumbing problems and are conveniently easy to install.
-These products are well received by Statutory Bodies, Government 
-Authorities and Professionals as follows:</p>
-
-  <ul style="padding-left: 45px;">
-     <li>Architects</li><li>Mechanical and Electrical  Consultants</li><li>SPAN (Suruhanjaya Perkhidmatan Air Negara) or National Water Services Commission.</li><li>SIRIM (Standards and Industrial Research Institute of Malaysia)</li><li>JKR (Jabatan Kerja Raya) or Malaysia Public Works Department. </li>
-  </ul>
-    <br>
-    <h3 class="small-title"> WATERTEC is an ISO 9002 compliant company</h3>
-
-
-
-<p>with excellent Quality Managemnet 
-Practices.Area of applications and features offered by WATERTEC 
-(MALAYSIA) SDN BHD are as follows:-</p>
-
-
-
-<ul style="padding-left: 45px;"><li>New buildings renovations and maintenance</li><li>Clever Solution Products</li><li>Personal Health Care</li><li>Cost Effect</li><li>Modern Design Mixers with Easy Installation.</li></ul>            
-             
-            
-          </div>  
-        </div>
+         @endforeach
       </div>
-      
-      
-      
-      
-           
-      
-      
-      
       
       <style>
         
