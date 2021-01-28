@@ -119,6 +119,8 @@ Route::get('/connection-hoses','websiteController@connectionHoses');
 Route::get('/mixer','websiteController@mixer');
 Route::get('/stop-valve','websiteController@stopValve');
 Route::get('toilet','websiteController@toilet');
+
+//media submenus
 Route::get('award','websiteController@award');
 Route::get('csr','websiteController@csr');
 Route::get('exhibition','websiteController@exhibition');

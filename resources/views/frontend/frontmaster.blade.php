@@ -13,7 +13,7 @@
   <!-- Social meta ================================================== -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Watertec - Simply Better">
-  <meta property="og:url" content="index.html">
+  <meta property="og:url" content="{{ url('/') }}">
   
 <meta property="og:image" content="{{asset('public/frontend/cdn/s/files/1/0045/0523/9670/t/3/assets/logo7d29.png?v=15550266324526685800')}}">
 <meta property="og:image:secure_url" content="{{asset('public/frontend/cdn/s/files/1/0045/0523/9670/t/3/assets/logo7d29.png?v=15550266324526685800')}}">
@@ -22,7 +22,7 @@
 <meta name="twitter:card" content="summary">
 
   <!-- Helpers ================================================== -->
-<link rel="canonical" href="index.html">
+<link rel="canonical" href="{{ url('/') }}">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#e81a46">
   

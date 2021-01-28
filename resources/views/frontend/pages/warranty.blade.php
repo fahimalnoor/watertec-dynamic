@@ -25,19 +25,9 @@
           <div class="grid">
 
   <div class="grid__item">
-
-    
-
-    <div class="rte grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item">
-<img  style="border: 3px solid black;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/warranty.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-</div>
-    <div class="rte grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item">
-<p>Total Quality is our way of life.
-Our responsibilities do not end when our products leaves our premises. 
-Our 6-years warranty against manufacturing defects for our customers shows that we believe in our products&#8217; high quality standards.</p>
-<img  style="border: 3px solid black;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/warranty-stiker.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-<p>Our quality policy attests to our commitment towards continuous improvement.</p>
-    </div>
+    @foreach($sub as $all_sub)
+      {!! $all_sub->description !!}
+    @endforeach
 
   </div>
 

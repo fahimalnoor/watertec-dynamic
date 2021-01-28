@@ -26,10 +26,9 @@
 
   <div class="grid__item" style="text-align: center;">
 
-    <img  style="border: 3px solid black;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/fusion.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-    <p>A marriage between engineering polymers and brass to make use of inherent properties and strength of both material.</p>
-
-  </div>
+    @foreach($sub as $all_sub)
+    {!! $all_sub->description !!}
+    @endforeach
 
 </div>
               

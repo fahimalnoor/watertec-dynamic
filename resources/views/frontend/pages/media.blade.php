@@ -26,18 +26,20 @@
   <div class="collection-products position-change">
 	    
 
-    
-    <div class="grid__item wide--fifth-fifths post-large--fifth-fifths large-tenth--tenths sidebar-hidden second">       
-      <div class="collection-list">
-        <div class="grid-uniform grid-link__container col-main">            
-           
-          <div class="products-grid-view">
               
-          </div>
-   
-        </div>
-      </div>
-    </div>
+      <a href="{{ url('media') }}" class="grid-link">            
+        
+        @foreach($sub as $all_sub)
+        
+        <div class="reveal"> 
+          <span class="product-additional">      
+          
+        {!! $all_sub->description !!}  
+         </div>     
+         @endforeach      
+        
+      </a>
+
     
 </div>
 </div>   

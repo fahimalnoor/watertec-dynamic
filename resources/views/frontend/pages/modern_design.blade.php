@@ -25,13 +25,9 @@
           <div class="grid">
 
   <div class="grid__item">
-    <div class="rte grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item grid-padding">
-<img  style="border: 3px solid black; max-width: 95%;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/modern-design-installation.png?v=1532344108') }}" alt="Bathroom Bath Tub" />
-</div>
-    <div class="rte grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item grid-padding">
-<iframe style="border: 3px solid black;" src="https://www.youtube.com/embed/9XfCbwqJET8" allowfullscreen="allowfullscreen" width="600px" height="315" frameborder="0"></iframe>
-    </div>
-
+    @foreach($sub as $all_sub)
+    {!! $all_sub->description !!}
+    @endforeach
 
   </div>
 

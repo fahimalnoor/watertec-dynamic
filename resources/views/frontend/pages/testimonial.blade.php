@@ -26,17 +26,10 @@
 
   <div class="grid__item">
 
-    
+      @foreach($sub as $all_sub)
+      {!! $all_sub->description !!}
+      @endforeach
 
-    <div class="rte grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item grid-padding">
-<img  style="border: 3px solid black;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/testimonial1.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-<img  style="border: 3px solid black;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/testimonial3.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-<img  style="border: 3px solid black;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/testimonial5.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-</div>
-    <div class="rte grid__item wide--one-half post-large--one-half large--one-half medium--one-half small-grid__item grid-padding">
-<img  style="border: 3px solid black;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/testimonial2.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-<img  style="border: 3px solid black;" src="{{ asset('public/frontend/cdn/s/files/1/0045/0523/9670/files/testimonial4.jpg?v=1532344108') }}" alt="Bathroom Bath Tub" />
-    </div>
 
   </div>
 

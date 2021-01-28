@@ -68,7 +68,7 @@
 
     </li>
 
-        <li class="  dropdown">
+        <li class=" dropdown">
       <a class="menu__mobile"  href="{{ url('/front/about') }}" class="">
         <span>         
           About Us          

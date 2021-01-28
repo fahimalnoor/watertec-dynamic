@@ -25,17 +25,9 @@
           <div class="grid">
 
   <div class="grid__item grid-padding">
-<h3>What is Green Building ?</h3>
-                        <p>Green building is the embodiment of the practice of planning, development, and environment management that meets the principles PEOPLE, PLANET, PROFIT, through three important things:</p>
-                        <p>Building sanitary maintenance.</p>
-            <p>Pollution reduction and environment preservation.</p>
-            <p> Efficient resources consumption.</p>
-
-  <h3>WATERTEC is the perfect solution for your Green Building, because:</h3>
-                        <p>The Top-Down Shut Off mechanism ensure your tap is completely turned off and leak-proof, making WATERTEC highly efficient for water consumption.</p>
-                        <p>Leak proof tap will leave your building dry and hygienic.</p>
-            <p>WATERTEC is made from polymer and its manufacturing process is much more eco-friendly compared to other water tap made out of metal.</p>
-
+                        @foreach($sub as $all_sub)
+                          {!! $all_sub->description !!}
+                        @endforeach
   </div>
 
 </div>
