@@ -836,7 +836,7 @@ class websiteController extends Controller
         $product = DB::table('products')->
         where('status', 'Active')->get();
         $product_toilet = DB::table('products')->
-        where('name', 'Toilet')->
+        where('name', 'Toilet Accessories')->
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
