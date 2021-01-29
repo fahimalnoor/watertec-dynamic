@@ -142,7 +142,7 @@
     </li>
 
 <li class="  dropdown">
-      <a class="menu__mobile"  href="" class="">
+      <a class="menu__mobile"  href="#" class="">
         <span>         
           Why Watertec         
         </span>       
@@ -296,10 +296,10 @@
           <ul class="dropdown">
             
             <!-- Menu level 3 -->
-            @foreach($product as $all_product)
+            @foreach($product_tap as $all_tap)
             <li>
-              <a href="{{ $all_product->url }}" >
-                {{ $all_product->name }}
+              <a href="{{ $all_tap->url }}" >
+                {{ $all_tap->name }}
               </a>
             </li>
             @endforeach
@@ -316,22 +316,13 @@
           </a>
           
           <ul class="dropdown">
-            
-            <!-- Menu level 3 -->
+          @foreach($product_bidets as $all_bidets)
             <li>
-              <a href="{{ url('/bidet') }}" >
-                Bidet
+              <a href="{{ $all_bidets->url }}" >
+                {{ $all_bidets->name }}
               </a>
             </li>
-            
-            <!-- Menu level 3 -->
-            <li>
-              <a href="{{ url('/hand-bidet') }}" >
-                Hand Bidet
-              </a>
-            </li>
-            
-            
+            @endforeach
           </ul>
           
         </div>
@@ -344,22 +335,13 @@
           </a>
           
           <ul class="dropdown">
-            
-            <!-- Menu level 3 -->
+          @foreach($product_shower as $all_shower)
             <li>
-              <a href="{{ url('/hand-shower') }}" >
-                 Hand Shower
+              <a href="{{ $all_shower->url }}" >
+                {{ $all_shower->name }}
               </a>
             </li>
-            
-            <!-- Menu level 3 -->
-            <li>
-              <a href="{{ url('/shower-arm') }}" >
-                Shower Head Arm
-              </a>
-            </li>
-            
-            
+            @endforeach
           </ul>
           
         </div>
@@ -373,33 +355,13 @@
           
           <ul class="dropdown">
             
-            <!-- Menu level 3 -->
+          @foreach($product_others as $all_others)
             <li>
-              <a href="{{ url('/connection-hoses') }}" >
-                Connection Hoses
+              <a href="{{ $all_others->url }}" >
+                {{ $all_others->name }}
               </a>
             </li>
-            
-            <!-- Menu level 3 -->
-            <li>
-              <a href="{{ url('/mixer') }}" >
-                 Mixer
-              </a>
-            </li>
-            
-            <!-- Menu level 3 -->
-            <li>
-              <a href="{{ url('/stop-valve') }}" >
-                Stop Valve
-              </a>
-            </li>
-            
-            <!-- Menu level 3 -->
-            <li>
-              <a href="{{ url('/toilet') }}" >
-                Toilet Accessories
-              </a>
-            </li>
+            @endforeach
             
           </ul>
           

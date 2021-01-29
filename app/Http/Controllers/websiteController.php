@@ -22,7 +22,20 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
         where('status', 'Active')->get();
         // sections data
         //sections all
@@ -46,8 +59,8 @@ class websiteController extends Controller
         where('sec_name','section_10')->where('status','Active')->get();
 
           return view('frontend.frontmain.index',compact('menu', 'sub', 'logo', 'slider', 'product',
-          'content2','content3', 'content4', 'content5', 'content6', 'content7', 'content8', 'content9',
-        'content10'));
+          'product_tap', 'product_bidets', 'product_shower', 'product_others', 'content2','content3',
+          'content4', 'content5', 'content6', 'content7', 'content8', 'content9', 'content10'));
     }
 
     public function about()
@@ -59,9 +72,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.about',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.about',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
 
 
@@ -76,10 +104,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
 
-        return view('frontend.pages.about_builtec',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        return view('frontend.pages.about_builtec',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function aboutWatertec()
    
@@ -91,9 +133,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.about_watertec',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.about_watertec',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function mission()
    
@@ -105,9 +162,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.mission',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.mission',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function vision()
    
@@ -119,9 +191,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.vision',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.vision',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function values()
    
@@ -133,9 +220,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.values',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.values',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function advantage()
    
@@ -147,9 +249,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.advantage',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.advantage',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function greenBuilding()
    
@@ -161,9 +278,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.green_building',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.green_building',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function qcProcedure()
    
@@ -175,9 +307,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.qc_procedure',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.qc_procedure',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function testimonial()
    
@@ -189,9 +336,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.testimonial',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.testimonial',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
 
     public function warranty()
@@ -204,9 +366,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.warranty',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.warranty',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function modernDesign()
    
@@ -218,9 +395,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.modern_design',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.modern_design',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function topDownShutOff()
    
@@ -232,9 +424,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.top_down_shut_off',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.top_down_shut_off',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function fusion()
    
@@ -246,9 +453,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.fusion',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.fusion',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function dismental()
    
@@ -260,9 +482,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.dismental',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.dismental',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function basinTap()
    
@@ -274,9 +511,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.basin_tap',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_basinTap = DB::table('products')->
+        where('name', 'Basin Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.basin_tap',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_basinTap', 'sub', 'logo', 'slider'));
     }
 
     public function sinkTap()
@@ -289,9 +544,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.sink_tap',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_sinkTap = DB::table('products')->
+        where('name', 'Sink Tap')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.sink_tap',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_sinkTap', 'sub', 'logo', 'slider'));
     }
     public function bipTap()
    
@@ -303,9 +576,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.bip_tap',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_bipTap = DB::table('products')->
+        where('name', 'Bip Tap')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.bip_tap',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_bipTap', 'sub', 'logo', 'slider'));
     }
     public function bidet()
    
@@ -317,9 +608,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.bidet',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_bidet = DB::table('products')->
+        where('name', 'Bidet')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.bidet',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_bidet', 'sub', 'logo', 'slider'));
     }
     public function handBidet()
    
@@ -331,9 +640,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.hand_bidet',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_handBidet = DB::table('products')->
+        where('name', 'Hand Bidet')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.hand_bidet',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_handBidet', 'sub', 'logo', 'slider'));
     }
     public function handShower()
    
@@ -345,9 +672,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.hand_shower',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_handShower = DB::table('products')->
+        where('name', 'Hand Shower')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.hand_shower',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_handShower', 'sub', 'logo', 'slider'));
     }
     public function showerArm()
    
@@ -359,9 +704,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.shower_arm',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_showerArm = DB::table('products')->
+        where('name', 'Shower Head Arm')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.shower_arm',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_showerArm', 'sub', 'logo', 'slider'));
     }
     public function connectionHoses()
    
@@ -373,9 +736,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.connection_hoses',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_connectionHoses = DB::table('products')->
+        where('name', 'Connection Hoses')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.connection_hoses',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_connectionHoses', 'sub', 'logo', 'slider'));
     }
     public function mixer()
    
@@ -387,9 +768,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.mixer',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_mixer = DB::table('products')->
+        where('name', 'Mixer')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.mixer',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_mixer', 'sub', 'logo', 'slider'));
     }
     public function stopValve()
    
@@ -401,9 +800,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.stop_valve',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_stopValve = DB::table('products')->
+        where('name', 'Stop Valve')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.stop_valve',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_stopValve', 'sub', 'logo', 'slider'));
     }
     public function toilet()
    
@@ -415,9 +832,27 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.product.toilet',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_toilet = DB::table('products')->
+        where('name', 'Toilet')->
+        where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.product.toilet',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'product_toilet', 'sub', 'logo', 'slider'));
     }
     public function award()
    
@@ -429,9 +864,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.award',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.award',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function csr()
    
@@ -443,9 +893,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.csr',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.csr',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function exhibition()
    
@@ -457,9 +922,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.exhibition',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.exhibition',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function meetPlumber()
    
@@ -471,9 +951,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.meet_plumber',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.meet_plumber',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function resource()
    
@@ -485,9 +980,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.resource',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.resource',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
     public function media()
    
@@ -499,9 +1009,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
-        return view('frontend.pages.media',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
+
+        return view('frontend.pages.media',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
 
 
@@ -510,16 +1035,30 @@ class websiteController extends Controller
    
     {
         $sub = DB::table('menus')->
-        where('sub_status', 'Active')->get();
+        where('menu_status', 'Active')->get();
         $logo = DB::table('logos')->
         where('logo_status', 'Active')->get();
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
         
-        return view('frontend.pages.contact',compact('menu', 'sub', 'logo', 'product', 'slider'));
+        return view('frontend.pages.contact',compact('menu', 'sub', 'logo', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'slider'));
     }
 
     public function product()
@@ -533,10 +1072,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
         
-        return view('frontend.product.single-product',compact('menu', 'product', 'sub', 'logo', 'slider'));
+        return view('frontend.product.single-product',compact('menu', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
     }
 
     public function collection()
@@ -549,10 +1102,24 @@ class websiteController extends Controller
         $menu = Menu::where('menu_status', 'Active')->get();
         $slider = DB::table('sliders')->
         where('status', 'Active')->get();
+        //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
+        $product_tap = DB::table('products')->
+        where('under_cat', 'Tap')->
+        where('status', 'Active')->get();
+        $product_bidets = DB::table('products')->
+        where('under_cat', 'Bidets')->
+        where('status', 'Active')->get();
+        $product_shower = DB::table('products')->
+        where('under_cat', 'Shower')->
+        where('status', 'Active')->get();
+        $product_others = DB::table('products')->
+        where('under_cat', 'Others')->
+        where('status', 'Active')->get();
         
-        return view('frontend.pages.collection',compact('menu', 'sub', 'product', 'logo', 'slider'));
+        return view('frontend.pages.collection',compact('menu', 'sub', 'product', 'product_tap',
+        'product_bidets', 'product_shower', 'product_others', 'logo', 'slider'));
     }
 }
 

@@ -1,6 +1,22 @@
 @extends('backend.back_master')
 @section('content')
 
+<script src="https://cdn.tiny.cloud/1/o1kj5zziqu1q8rlav7c9torfbau90d0jofo6gwe495eg18kf/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+      selector: 'textarea.tinymce',
+      plugins: 'a11ychecker code autoresize inline image textpattern imagetools advcode casechange formatpainter linkchecker autolink lists advlist checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker', 
+      toolbar: 'a11ycheck addcomment inline showcomments casechange checklist code imagetools advlist formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      advlist_bullet_styles: 'circle',
+      images_upload_url: 'postAcceptor.php',
+      image_advtab: true,
+      automatic_uploads: false,
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+   });
+  </script>
+
 <div class="wrapper">
 <div class="content-wrapper">
             <div class="content">
@@ -21,6 +37,7 @@
                                                 <th>SL No.</th>
                                                 <th>Product Name</th>
                                                 <th>Category</th>
+                                                <th>Description</th>
                                                 <th>Status</th>
                                                 <th>Cover Image</th>
                                                 <th>Action</th>
@@ -34,6 +51,7 @@
                                                 <td>{{$i++}}</td>
                                                 <td>{{$all_product->name}}</td>
                                                 <td>{{$all_product->under_cat}}</td>
+                                                <td>{{str_limit($all_product->description, 10)}}</td>
                                                 <td>{{$all_product->status}}</td>
                                                 <td><img src="{{ asset($all_product->image) }}" alt="product-image" width="100" height="100" class="img-responsive post-image" />
                                                 </td>
@@ -69,6 +87,20 @@
                             <input type="url" name="url" class="form-control" placeholder="Edit URL" value="{{$all_product->url}}">
 
                         </div>
+                        <div class="form-group">
+                                            <label></label>
+                                            <select class="form-control select2" name="under_cat" style="width: 100%;">
+                                                <option >Select Category</option>
+                                                @foreach($cat as $all_cat)  
+                                                <option value="{{$all_cat->cat_name}}">{{$all_cat->cat_name}}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                        <div class="form-group">
+                                            Enter Description Below<br>
+                                            <textarea class="tinymce" name="description" value="">{{ $all_product->description }}
+                                            </textarea>
+                                        </div><br>
                         <div class="form-group" >
                                             <p>Edit Status:</p>
                                         <input type="radio" id="active" name="status" value="Active">

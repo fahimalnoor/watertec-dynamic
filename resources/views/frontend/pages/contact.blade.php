@@ -10,15 +10,10 @@
 
   <span aria-hidden="true" class="breadcrumb__sep">&#47;</span>
   <span>Contact</span>
-
   
 </nav>
   <div class="dt-sc-hr-invisible-large"></div> 
 
- 
-    
-
-      
     <main class="main-content ">  
       
         <div class="grid__item">           
@@ -35,54 +30,11 @@
     <div class="dt-sc-hr-invisible-large"></div>
     <div class="grid__item">
       
-      <ul>
-        <li class="grid__item wide--one-quarter post-large--one-half large--one-half">
-          <div class="icon-wrapper">
-            <div class="icon">
-              <i class="fa fa-phone"></i> 
-            </div>
-             
-            <h4>TALK TO US</h4>
-            <p>  Toll-Free: 0803 - 080 - 3081 <br>0803 - 080 - 3081</p><mark></mark> 
-            
-          </div>
-        </li>
-        <li class="grid__item wide--one-quarter post-large--one-half large--one-half">
-          <div class="icon-wrapper">
-            
-            <div class="icon">
-              <i class="fa fa-envelope"></i>
-            </div>
-            <h4>Contact Us</h4>
-            <p> 
-              <a title="" href="#">buddhathemes@mail.com</a><br><a title="" href="#">support@somemail.com</a>
-            </p> 
-            
-          </div>
-        </li>
-         
-        <li class="address grid__item wide--one-quarter post-large--one-half large--one-half"> 
-          <div class="icon-wrapper">
-            <div class="icon">
-              <i class="fa fa-home"></i>
-            </div> 
-            <h4>LOCATION</h4>
-            <p> No: 58 A, East Madison Street,<br /> Baltimore, MD, USA 4508<br /></p><mark></mark> 
-          </div>
-        </li>
+        @foreach($menu as $all_menu)
+        {!! $all_menu->description !!}
+        @endforeach
         
-         
-        <li class="hours grid__item wide--one-quarter post-large--one-half large--one-half"> 
-          <div class="icon-wrapper">
-            <div class="icon">
-              <i class="fa fa-clock-o"></i>
-            </div> 
-            <h4>OPENING HOURS</h4>
-            <p> Mon – Sat 9 am to 8 pm<br /> Sun – 10 am to 3 pm</p>
-          </div>
-        </li>
         
-      </ul>
       
     </div>
     <div class="dt-sc-hr-invisible-large"></div>

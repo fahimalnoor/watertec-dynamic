@@ -43,6 +43,7 @@ class productController extends Controller
         $product->name = $request->name;
         $product->under_cat = $request->under_cat;
         $product->url = $request->url;
+        $product->description = $request->description;
         $product->image = $imgUrl;
         $product->status=$request->status;
         $product->save();
@@ -71,6 +72,7 @@ class productController extends Controller
        $product=Product::find($request->id);
         $product->name=$request->name;
         $product->url=$request->url;
+        $product->description=$request->description;
         $product->status=$request->status;
         $product->under_cat=$request->under_cat;
         $product->save();

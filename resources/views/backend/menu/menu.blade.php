@@ -1,6 +1,22 @@
 @extends('backend.back_master')
 @section('content')
 
+<script src="https://cdn.tiny.cloud/1/o1kj5zziqu1q8rlav7c9torfbau90d0jofo6gwe495eg18kf/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+      selector: 'textarea.tinymce',
+      plugins: 'a11ychecker code autoresize inline image textpattern imagetools advcode casechange formatpainter linkchecker autolink lists advlist checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker', 
+      toolbar: 'a11ycheck addcomment inline showcomments casechange checklist code imagetools advlist formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      advlist_bullet_styles: 'circle',
+      images_upload_url: 'postAcceptor.php',
+      image_advtab: true,
+      automatic_uploads: false,
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+   });
+  </script>
+
 <div class="wrapper">
 <div class="content-wrapper">
             <div class="content">
@@ -21,6 +37,7 @@
                                                 <th>SL No.</th>
                                                 <th>Name</th>
                                                 <th>Link</th>
+                                                <th>Description</th>
                                                 <th>Status</th>
                                                 <th>Action</th>
                                             </tr>
@@ -32,6 +49,7 @@
                                                 <td>{{$i++}}</td>
                                                 <td>{{$all_menu->menu_name}}</td>
                                                 <td>{{str_limit($all_menu->menu_link, 10)}}</td>
+                                                <td>{{str_limit($all_menu->description, 10)}}</td>
                                                 <td>{{$all_menu->menu_status}}</td>
                                                 <td><a href="{{url('/admin/menu/update',$all_menu->id)}}" class="action-btn" data-toggle="modal" data-target="#exampleModal{{$all_menu->id}}"><i class="far fa-edit"></i></a>
 
@@ -62,6 +80,12 @@
                         <div class="form-group">
                             <label>Edit Link</label>
                             <input type="text" name="menu_link" class="form-control" placeholder="Edit Menu Link" value="{{$all_menu->menu_link}}">
+                        </div>
+                        <div class="form-group">
+                            <label>Edit Description</label>
+                            <textarea class="tinymce" name="description">
+                            {{$all_menu->description}}
+                                            </textarea>
                         </div>
 
                          <div class="form-group" >
@@ -103,6 +127,11 @@
 
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="menu_link" name="menu_link" placeholder="Enter Menu Link">
+                                        </div><br>
+                                        <div class="form-group">
+                                            Enter Description Below<br>
+                                            <textarea class="tinymce" name="description" value="">
+                                            </textarea>
                                         </div><br>
                                        
                                             <div class="row">

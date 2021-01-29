@@ -23,6 +23,7 @@ class menuController extends Controller
         $data=array();
         $data['menu_name']=$request->menu_name;
         $data['menu_link']=$request->menu_link;
+        $data['description']=$request->description;
         $data['menu_status']=$request->menu_status;
         DB::table('menus')->insert($data);     
         return redirect()->back();
@@ -42,6 +43,7 @@ class menuController extends Controller
         $menu=Menu::find($request->id);
         $menu->menu_name=$request->menu_name;
         $menu->menu_link=$request->menu_link;
+        $menu->description=$request->description;
         $menu->menu_status=$request->menu_status;
         $menu->save();
         return redirect()->back();
