@@ -7,9 +7,218 @@
     <div class="home-slideshow">
       <div class="variable-width" data-slick='{dots: true, slidesToScroll: 1,autoplay:true,fade: true,autoplaySpeed:5000}'>
         @foreach($slider as $all_slide)
+        @if($all_slide->description == "<p>first slide</p>"){
         
         
+          <div class="slick-list slider_style_2">                
+        
+
+
         <img src="{{ $all_slide->image }}"  class="slide-img medium-down--hide" alt="" />
+        
+        
+        
+        <img src="{{ $all_slide->image }}"  class="slide-img wide--hide post-large--hide large--hide" alt="" />
+        
+        
+        
+        
+        <div class="slider-content slider-content-bg medium-down--hide" style="top: 48%;">
+          <div class="slide_left" style="">
+        
+            
+            <h5 class="slide-text animated "
+                style="display:inline-block;
+                       
+                       font-size: 20px;
+                       
+                       
+                       color:#ffffff;
+                        
+                       
+                       background:#e81a46;
+                        ">
+              IT'S HOW YOU LIVE
+            </h5>
+            
+        
+            
+            <h2 class="slide-heading animated "
+                style=" 
+                       font-size: 45px;
+                       
+                       
+                       color:#000;
+                       ">
+              LOTS OF LUXURY                   
+            </h2>
+            
+            
+            <h4 class=" slide-sub-heading-2 animated "
+                style="
+                       font-size: 45px;
+                       
+                       
+                       color:#000;
+                       ">
+              IN A LITTLE SPACE                   
+            </h4>
+            
+         
+          
+             </div>
+        </div>
+        
+        
+                <style> 
+                  .slider_style_2 .slide-offer-text span {color:#000!important;}
+                   .slider_style_2 .btn:hover {color:#ffffff!important;background:#e81a46!important;}
+                  @media screen and (min-width: 320px) and (max-width: 767px) {
+        
+                    .slider_style_2 .slider-content {background:rgba(255, 255, 255, 0.7);}
+                  }
+                </style>
+              </div>
+        
+        }
+        @elseif($all_slide->description == "<p>second slide</p>"){
+
+          <div class="slick-list slider_style_1"> 
+        
+
+
+<img src="{{ $all_slide->image }}"  class="slide-img medium-down--hide" alt="" />
+
+
+
+<img src="{{ $all_slide->image }}"  class="slide-img wide--hide post-large--hide large--hide" alt="" />
+
+
+
+
+
+<div class="slider-content slider-content-bg medium-down--hide" style="top: 48%;">
+  <div class="slide_left" style="">
+
+    
+    <h5 class="slide-text animated "
+        style="display:inline-block;
+               
+               font-size: 20px;
+               
+               
+               color:#ffffff;
+                `
+               
+               background:#e81a46;
+                ">
+      IT'S HOW YOU LIVE
+    </h5>
+    
+
+    
+    <h2 class="slide-heading animated "
+        style=" 
+               font-size: 45px;
+               
+               
+               color:#000;
+               ">
+      TAKE A FRESH LOOK                   
+    </h2>
+    
+    
+    <h4 class=" slide-sub-heading-2 animated "
+        style="
+               font-size: 45px;
+               
+               
+               color:#000;
+               ">
+      AT WATERTEC                   
+    </h4>
+    
+  
+     </div>
+</div>
+
+        <style> 
+          .slider_style_1 .slide-offer-text span {color:#000!important;}
+           .slider_style_1 .btn:hover {color:#ffffff!important;background:#e81a46!important;}
+
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+
+            .slider_style_1 .slider-content {background:rgba(255, 255, 255, 0.7);}
+          }
+        </style>
+      </div>
+        }
+
+        @elseif($all_slide->description == "<p>third slide</p>"){
+
+          <div class="slick-list slider_style_1">    
+<img src="{{ $all_slide->image }}"  class="slide-img medium-down--hide" alt="" />
+
+<img src="{{ $all_slide->image }}"  class="slide-img wide--hide post-large--hide large--hide" alt="" />
+<div class="slider-content slider-content-bg medium-down--hide" style="top: 48%;">
+  <div class="slide_left" style="">
+
+    <h5 class="slide-text animated "
+        style="display:inline-block;
+               
+               font-size: 20px;
+               
+               
+               color:#ffffff;
+                
+               
+               background:#e81a46;
+                ">
+      Committed To Customer
+    </h5>
+    
+    <h2 class="slide-heading animated "
+        style=" 
+               font-size: 45px;
+               
+               
+               color:#000;
+               ">
+      High Perceived Value By                   
+    </h2>
+    
+    <h4 class=" slide-sub-heading-2 animated "
+        style="
+               font-size: 45px;
+               
+               
+               color:#000;
+               ">
+      Replacing Costly Material                   
+    </h4>
+     </div>
+</div>
+        <style> 
+
+          .slider_style_3 .slide-offer-text span {color:#ffffff!important;}
+           .slider_style_3 .btn:hover {color:#ffffff!important;background:#000000!important;}
+          
+            
+          .slider_style_3 .slider-content {background:rgba(232, 26, 70, 0.7);}
+           
+          
+          
+           @media screen and (min-width: 320px) and (max-width: 767px) {
+          
+           }
+          
+        </style>
+      </div>
+
+        }
+
+
+        @endif
 
         @endforeach
 
@@ -17,10 +226,7 @@
       </div>
     </div>
   </div>
-
-
-
-<script>  
+  <script>  
   $(document).on('ready', function() {
     $('.variable-width').slick({
       dots: true,
@@ -31,21 +237,23 @@
       afterChange: function(slick, currentSlide){
       console.log(currentSlide);
     }
-    });   
+                               });   
   })
 </script>
 
+
 <style>
 
-  .variable-width img {height: 600px;width: 100%;}
+.variable-width img {height: 600px;width: 100%;}
   @media screen and (min-width: 320px) and (max-width: 767px) {}
 
 </style>
 
-
 <style>
   .home-slideshow  .slick-arrow:before{ color: #000000; }  
 </style>
+
+
 </div>
 
 

@@ -1,21 +1,6 @@
 @extends('backend.back_master')
 @section('content')
 
-<script src="https://cdn.tiny.cloud/1/o1kj5zziqu1q8rlav7c9torfbau90d0jofo6gwe495eg18kf/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-<script>
-    tinymce.init({
-      selector: 'textarea.tinymce',
-      plugins: 'a11ychecker code autoresize inline image textpattern imagetools advcode casechange formatpainter linkchecker autolink lists advlist checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker', 
-      toolbar: 'a11ycheck addcomment inline showcomments casechange checklist code imagetools advlist formatpainter pageembed permanentpen table',
-      toolbar_mode: 'floating',
-      advlist_bullet_styles: 'circle',
-      images_upload_url: 'postAcceptor.php',
-      image_advtab: true,
-      automatic_uploads: false,
-      tinycomments_mode: 'embedded',
-      tinycomments_author: 'Author name',
-   });
-  </script>
 
 <div class="wrapper">
        <div class="content-wrapper">
@@ -49,14 +34,9 @@
                                             <input type="text" class="form-control" id="url" name="url" placeholder="Enter URL">
                                         </div>
                                         
-                                        <div class="form-group">
-                                            Enter Description Below<br>
-                                            <textarea class="tinymce" name="description" value="">
-                                            </textarea>
-                                        </div><br>
                                         <div class="form-group" >
                                             <p>Edit Status:</p>
-                                        <input type="radio" id="active" name="status" value="Active">
+                                        <input type="radio" id="active" name="status" value="Active" checked>
                                         <label for="active">Active</label><br>
                                         <input type="radio" id="inactive" name="status" value="Inactive">
                                         <label for="inactive">Inactive</label><br>
@@ -65,6 +45,12 @@
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" name="image" id="image">
                                                 <label class="custom-file-label" for="image">Cover Image</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" name="pro_image" id="pro_image">
+                                                <label class="custom-file-label" for="pro_image">Product Image</label>
                                             </div>
                                         </div>
                                         <div class="text-right">

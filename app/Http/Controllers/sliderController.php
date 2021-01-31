@@ -36,7 +36,6 @@ class sliderController extends Controller
         $data['image']=$imgUrl;
         $data['status']=$request->status;
         $data['description']=$request->description;
-        $data['code']=$request->code;
         DB::table('sliders')->insert($data);
         return redirect()->back();
         }
@@ -56,12 +55,29 @@ class sliderController extends Controller
     }
 
     public function update(Request $request , $id)
-    {  
+    {   //image
+
+        if ($request->hasFile('image')){
+        $postImage = $request->file('image');
+        $imageName = $postImage->getClientOriginalName();
+        $directory = 'public/image/imageSlider/';
+        $imgUrl = $directory.$imageName;
+        $postImage->move($directory, $imageName);
+
         $slider=Slider::find($request->id);
         $slider->description=$request->description;
-        $slider->code=$request->code;
+        $slider->image=$imgUrl;
         $slider->status=$request->status;
         $slider->save();
         return redirect()->back();
+        }
+        else{
+        $slider=Slider::find($request->id);
+        $slider->description=$request->description;
+        $slider->status=$request->status;
+        $slider->save();
+        return redirect()->back();
+
+        }
     }
 }

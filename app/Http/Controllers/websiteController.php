@@ -27,16 +27,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         // sections data
         //sections all
         $content2 = DB::table('sections')->
@@ -77,16 +77,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.about',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -109,16 +109,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.about_builtec',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -138,16 +138,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.about_watertec',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -167,16 +167,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.mission',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -196,16 +196,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.vision',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -225,16 +225,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.values',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -254,16 +254,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.advantage',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -283,16 +283,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.green_building',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -312,16 +312,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.qc_procedure',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -341,16 +341,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.testimonial',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -371,16 +371,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.warranty',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -400,16 +400,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.modern_design',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -429,16 +429,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.top_down_shut_off',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -458,16 +458,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.fusion',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -487,16 +487,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.dismental',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -516,19 +516,19 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_basinTap = DB::table('products')->
         where('name', 'Basin Tap')->
         where('status', 'Active')->get();
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.basin_tap',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_basinTap', 'sub', 'logo', 'slider'));
@@ -552,16 +552,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.sink_tap',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_sinkTap', 'sub', 'logo', 'slider'));
@@ -582,18 +582,19 @@ class websiteController extends Controller
         $product_bipTap = DB::table('products')->
         where('name', 'Bip Tap')->
         where('status', 'Active')->get();
+        
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.bip_tap',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_bipTap', 'sub', 'logo', 'slider'));
@@ -616,16 +617,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.bidet',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_bidet', 'sub', 'logo', 'slider'));
@@ -646,18 +647,19 @@ class websiteController extends Controller
         $product_handBidet = DB::table('products')->
         where('name', 'Hand Bidet')->
         where('status', 'Active')->get();
+        
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.hand_bidet',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_handBidet', 'sub', 'logo', 'slider'));
@@ -678,18 +680,19 @@ class websiteController extends Controller
         $product_handShower = DB::table('products')->
         where('name', 'Hand Shower')->
         where('status', 'Active')->get();
+
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.hand_shower',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_handShower', 'sub', 'logo', 'slider'));
@@ -710,18 +713,19 @@ class websiteController extends Controller
         $product_showerArm = DB::table('products')->
         where('name', 'Shower Head Arm')->
         where('status', 'Active')->get();
+
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.shower_arm',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_showerArm', 'sub', 'logo', 'slider'));
@@ -742,18 +746,19 @@ class websiteController extends Controller
         $product_connectionHoses = DB::table('products')->
         where('name', 'Connection Hoses')->
         where('status', 'Active')->get();
+
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.connection_hoses',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_connectionHoses', 'sub', 'logo', 'slider'));
@@ -774,18 +779,19 @@ class websiteController extends Controller
         $product_mixer = DB::table('products')->
         where('name', 'Mixer')->
         where('status', 'Active')->get();
+
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.mixer',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_mixer', 'sub', 'logo', 'slider'));
@@ -806,18 +812,19 @@ class websiteController extends Controller
         $product_stopValve = DB::table('products')->
         where('name', 'Stop Valve')->
         where('status', 'Active')->get();
+
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.stop_valve',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_stopValve', 'sub', 'logo', 'slider'));
@@ -838,18 +845,19 @@ class websiteController extends Controller
         $product_toilet = DB::table('products')->
         where('name', 'Toilet Accessories')->
         where('status', 'Active')->get();
+
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.product.toilet',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'product_toilet', 'sub', 'logo', 'slider'));
@@ -867,18 +875,19 @@ class websiteController extends Controller
         //all products
         $product = DB::table('products')->
         where('status', 'Active')->get();
+
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.award',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -898,16 +907,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.csr',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -927,16 +936,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.exhibition',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -956,16 +965,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.meet_plumber',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -985,16 +994,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.resource',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -1014,16 +1023,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
 
         return view('frontend.pages.media',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -1046,16 +1055,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         
         return view('frontend.pages.contact',compact('menu', 'sub', 'logo', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'slider'));
@@ -1077,16 +1086,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         
         return view('frontend.product.single-product',compact('menu', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'sub', 'logo', 'slider'));
@@ -1107,16 +1116,16 @@ class websiteController extends Controller
         where('status', 'Active')->get();
         $product_tap = DB::table('products')->
         where('under_cat', 'Tap')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_bidets = DB::table('products')->
         where('under_cat', 'Bidets')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_shower = DB::table('products')->
         where('under_cat', 'Shower')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         $product_others = DB::table('products')->
         where('under_cat', 'Others')->
-        where('status', 'Active')->get();
+        where('status', 'Active')->get()->unique('name');
         
         return view('frontend.pages.collection',compact('menu', 'sub', 'product', 'product_tap',
         'product_bidets', 'product_shower', 'product_others', 'logo', 'slider'));

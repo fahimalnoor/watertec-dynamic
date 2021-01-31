@@ -54,30 +54,43 @@
 
 
           <div class="products-grid-view">
-            
-      <a href="{{ url('/basin-tap') }}" class="grid-link">            
-        
-        
-        
-           @foreach($product_basinTap as $all_product)
-            
-             {!! $all_product->description !!}
-            
-        @endforeach   
-        
-      </a>
-
-
-
-      <div class="product_right_tag   offer_exist ">
           
-       
+          <ul>
+            
+            @foreach($product_basinTap as $all_product)
+            <li class="grid__item item-row  wide--one-quarter post-large--one-third large--one-half medium--one-half small-grid__item on-sale" id="product-1892471406710" >
+              <div class="products product-hover-16">
+                <div class="product-container">  
+                  
+                  <a href="{{ url('/basin-tap') }}" class="grid-link">           
+                    
+                    
+                    
+                       
+                    <div class="ImageOverlayCa"></div>
+                    
+                    <div class="reveal"> 
+                      <span class="product-additional">      
+                        <img src="{{ asset($all_product->pro_image) }}" class="featured-image">
+                      </span>
+                      <img  src="{{ asset($all_product->pro_image) }}" class="hidden-feature_img" />
+                    </div>      
+                    
+                  </a>
+            
+            
+            
+                  <div class="product_right_tag   offer_exist ">
+                      
+                    
+                  </div>
+                </div>
+            
+              </div>
+            </li>
+            @endforeach
 
-  </div>
-          
-          </div>
-   
-        </div>
+            </ul>
       </div>
     </div>
     

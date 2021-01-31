@@ -37,7 +37,8 @@
                                                 <th>SL No.</th>
                                                 <th>Product Name</th>
                                                 <th>Category</th>
-                                                <th>Description</th>
+                                                <th>URL</th>
+                                                <th>Product Image</th>
                                                 <th>Status</th>
                                                 <th>Cover Image</th>
                                                 <th>Action</th>
@@ -51,9 +52,11 @@
                                                 <td>{{$i++}}</td>
                                                 <td>{{$all_product->name}}</td>
                                                 <td>{{$all_product->under_cat}}</td>
-                                                <td>{{str_limit($all_product->description, 10)}}</td>
+                                                <td>{{$all_product->url}}</td>
+                                                <td><img src="{{ asset($all_product->pro_image) }}" width="100" height="100" class="img-responsive post-image" />
+                                                </td>
                                                 <td>{{$all_product->status}}</td>
-                                                <td><img src="{{ asset($all_product->image) }}" alt="product-image" width="100" height="100" class="img-responsive post-image" />
+                                                <td><img src="{{ asset($all_product->image) }}" width="100" height="100" class="img-responsive post-image" />
                                                 </td>
                                                 <td><a href="{{url('/admin/products/update',$all_product->id)}}" class="action-btn" data-toggle="modal" data-target="#exampleModal{{$all_product->id}}"><i class="far fa-edit"></i></a>
 
@@ -75,7 +78,7 @@
                                                  </div>
                                                 <div class="modal-body">
 
-                    <form action="{{ url('/admin/products/update', $all_product->id) }}" method="POST">
+                    <form action="{{ url('/admin/products/update', $all_product->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label>Edit Product Name</label>
@@ -96,14 +99,15 @@
                                                 @endforeach
                                             </select>
                                         </div>
-                        <div class="form-group">
-                                            Enter Description Below<br>
-                                            <textarea class="tinymce" name="description" value="">{{ $all_product->description }}
-                                            </textarea>
-                                        </div><br>
+                                        <div class="form-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" name="pro_image" id="pro_image">
+                                                <label class="custom-file-label" for="pro_image">Change Product Image</label>
+                                            </div>
+                                        </div>
                         <div class="form-group" >
                                             <p>Edit Status:</p>
-                                        <input type="radio" id="active" name="status" value="Active">
+                                        <input type="radio" id="active" name="status" value="Active" checked>
                                         <label for="active">Active</label><br>
                                         <input type="radio" id="inactive" name="status" value="Inactive">
                                         <label for="inactive">Inactive</label><br>
