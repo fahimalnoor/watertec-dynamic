@@ -78,8 +78,8 @@
                     <form action="{{ url('/admin/submenu/update', $all_sub->id) }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label>Edit Sub-Menu Name</label>
-                            <input type="text" name="sub_name" class="form-control" placeholder="Edit Sub-Menu Name" value="{{$all_sub->sub_name}}">
+                            <label>Sub-Menu Name</label>
+                            <input type="text" name="sub_name" class="form-control" placeholder="Edit Sub-Menu Name" value="{{$all_sub->sub_name}}" readonly>
                         </div>
                         <div class="form-group">
                                             <label>Menu</label>
@@ -103,7 +103,7 @@
 
                          <div class="form-group" >
                                             <p>Edit Status:</p>
-                                        <input type="radio" id="active" name="sub_status" value="Active">
+                                        <input type="radio" id="active" name="sub_status" value="Active" checked>
                                         <label for="active">Active</label><br>
                                         <input type="radio" id="inactive" name="sub_status" value="Inactive">
                                         <label for="inactive">Inactive</label><br>

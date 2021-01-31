@@ -45,7 +45,7 @@
                                                 <td>{{$i++}}</td>
                                                 <td>{{$all_cont->sec_name}}</td>
                                                 <td>{{$all_cont->status}}</td>
-                                                <td><img src="{{ asset($all_cont->image) }}" alt="Alt Image" width="100" height="100" class="img-responsive post-image" />
+                                                <td><img src="{{ asset($all_cont->image) }}" width="100" height="100" class="img-responsive post-image" />
                                                 </td>
                                                 <td><a href="{{url('/admin/sections/update',$all_cont->id)}}" class="action-btn" data-toggle="modal" data-target="#exampleModal{{$all_cont->id}}"><i class="far fa-edit"></i></a>
 
@@ -84,7 +84,7 @@
 
                          <div class="form-group" >
                                             <p>Edit Status:</p>
-                                        <input type="radio" id="active" name="status" value="Active">
+                                        <input type="radio" id="active" name="status" value="Active" checked>
                                         <label for="active">Active</label><br>
                                         <input type="radio" id="inactive" name="status" value="Inactive">
                                         <label for="inactive">Inactive</label><br>
@@ -129,7 +129,7 @@
                                        
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <input type="radio" id="active" name="status" value="Active">
+                                                    <input type="radio" id="active" name="status" value="Active" checked>
                                                     <label for="active">Active</label>
                                                     <input type="radio" id="inactive" name="status" value="Inactive">
                                                     <label for="inactive">Inactive</label><br><br>

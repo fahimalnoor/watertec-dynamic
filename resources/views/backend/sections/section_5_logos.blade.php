@@ -85,7 +85,7 @@
 
                          <div class="form-group" >
                                             <p>Edit Status:</p>
-                                        <input type="radio" id="active" name="status" value="Active">
+                                        <input type="radio" id="active" name="status" value="Active" checked>
                                         <label for="active">Active</label><br>
                                         <input type="radio" id="inactive" name="status" value="Inactive">
                                         <label for="inactive">Inactive</label><br>
@@ -130,7 +130,7 @@
                                        
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <input type="radio" id="active" name="status" value="Active">
+                                                    <input type="radio" id="active" name="status" value="Active" checked>
                                                     <label for="active">Active</label>
                                                     <input type="radio" id="inactive" name="status" value="Inactive">
                                                     <label for="inactive">Inactive</label><br><br>

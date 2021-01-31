@@ -55,8 +55,8 @@
                     <form action="{{ url('/admin/subcategories/update', $all_subcat->id) }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label>Edit Sub Category Name</label>
-                            <input type="text" name="subcat_name" class="form-control" placeholder="Edit Sub Category Name" value="{{$all_subcat->subcat_name}}">
+                            <label>Sub Category Name</label>
+                            <input type="text" name="subcat_name" class="form-control" placeholder="Edit Sub Category Name" value="{{$all_subcat->subcat_name}}" readonly>
 
                         </div>
 

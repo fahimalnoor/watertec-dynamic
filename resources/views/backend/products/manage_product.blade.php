@@ -81,8 +81,8 @@
                     <form action="{{ url('/admin/products/update', $all_product->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <label>Edit Product Name</label>
-                            <input type="text" name="name" class="form-control" placeholder="Edit Product Name" value="{{$all_product->name}}">
+                            <label>Product Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Edit Product Name" value="{{$all_product->name}}" readonly>
 
                         </div>
                         <div class="form-group">

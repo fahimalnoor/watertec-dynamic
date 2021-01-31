@@ -55,8 +55,8 @@
                     <form action="{{ url('/admin/categories/update', $all_cat->id) }}" method="POST">
                         @csrf
                         <div class="form-group">
-                            <label>Edit Category Name</label>
-                            <input type="text" name="cat_name" class="form-control" placeholder="Edit Category Name" value="{{$all_cat->cat_name}}">
+                            <label>Category Name</label>
+                            <input type="text" name="cat_name" class="form-control" placeholder="Edit Category Name" value="{{$all_cat->cat_name}}" readonly>
 
                         </div>
 

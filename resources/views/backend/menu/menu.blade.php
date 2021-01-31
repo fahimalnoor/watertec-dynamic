@@ -74,8 +74,8 @@
                     <form action="{{ url('/admin/menu/update', $all_menu->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <label>Edit Menu Name</label>
-                            <input type="text" name="menu_name" class="form-control" placeholder="Edit Menu Name" value="{{$all_menu->menu_name}}">
+                            <label>Menu Name</label>
+                            <input type="text" name="menu_name" class="form-control" placeholder="Edit Menu Name" value="{{$all_menu->menu_name}}" readonly>
                         </div>
                         <div class="form-group">
                             <label>Edit Link</label>
@@ -90,7 +90,7 @@
 
                          <div class="form-group" >
                                             <p>Edit Status:</p>
-                                        <input type="radio" id="active" name="menu_status" value="Active">
+                                        <input type="radio" id="active" name="menu_status" value="Active" checked>
                                         <label for="active">Active</label><br>
                                         <input type="radio" id="inactive" name="menu_status" value="Inactive">
                                         <label for="inactive">Inactive</label><br>
