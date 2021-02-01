@@ -252,7 +252,7 @@ for (var attr in meta) {
         window.BOOMR.shopId = 4505239670;
         window.BOOMR.themeId = 79243509878;
         window.BOOMR.url =
-          "../cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
+          "public/frontend/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
         var where = document.currentScript || document.getElementsByTagName("script")[0];
         var parentNode = where.parentNode;
         var promoted = false;
@@ -426,7 +426,7 @@ for (var attr in meta) {
     window.enable_sidebar_multiple_choice = true;
     window.loading_url = "{{asset('public/frontend/cdn/s/files/1/0045/0523/9670/t/3/assets/loadinga062.gif?v=5083731268673326083')}}";     
     window.dropdowncart_type = "hover";
-    window.file_url = "http://cdn/s/files/1/0045/0523/9670/files/?240";
+    window.file_url = "http://public/frontend/cdn/s/files/1/0045/0523/9670/files/?240";
     window.asset_url = "";
     window.items="Items";
     window.many_in_stock="Many In Stock";

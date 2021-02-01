@@ -197,7 +197,7 @@ for (var attr in meta) {
       (new Image()).src = 'http://v.shopify.com/internal_errors/track?error=trekkie_load';
     };
     script.async = true;
-    script.src = '{{asset('public/frontend/cdn/s/javascripts/tricorder/trekkie.storefront.mindd82.js?v=2020.07.13.1')}}';
+    script.src = "{{asset('public/frontend/cdn/s/javascripts/tricorder/trekkie.storefront.mindd82.js?v=2020.07.13.1')}}";
     var first = document.getElementsByTagName('script')[0];
     first.parentNode.insertBefore(script, first);
   };
@@ -407,7 +407,7 @@ for (var attr in meta) {
     window.enable_sidebar_multiple_choice = true;
     window.loading_url = "{{asset('public/frontend/cdn/s/files/1/0045/0523/9670/t/3/assets/loadinga062.gif?v=5083731268673326083')}}";     
     window.dropdowncart_type = "hover";
-    window.file_url = "{{asset('public/frontend/http://cdn/s/files/1/0045/0523/9670/files/?240')}}";
+    window.file_url = "{{asset('http://public/frontend/cdn/s/files/1/0045/0523/9670/files/?240')}}";
     window.asset_url = "";
     window.items="Items";
     window.many_in_stock="Many In Stock";

@@ -32,6 +32,7 @@
                                             <tr>
                                                 <th>SL No.</th>
                                                 <th>Name</th>
+                                                <th>Link</th>
                                                 <th>Status</th>
                                                 <th>Image</th>
                                                 <th>Action</th>
@@ -44,6 +45,7 @@
                                             <tr>
                                                 <td>{{$i++}}</td>
                                                 <td>{{$all_cont->sec_name}}</td>
+                                                <td>{{$all_cont->link}}</td>
                                                 <td>{{$all_cont->status}}</td>
                                                 <td><img src="{{ asset($all_cont->image) }}" alt="Product Image" width="100" height="100" class="img-responsive post-image" />
                                                 </td>
@@ -74,6 +76,10 @@
                             <input type="text" name="sec_name" class="form-control" placeholder="Edit Section Name" value="{{$all_cont->sec_name}}" readonly>
 
                         </div>
+                        <div class="form-group">
+                                            Modify Product Link: <br>
+                                            <input type="text" class="form-control" id="link" name="link" value="">
+                                        </div><br>
 
                         <div class="form-group">
                             <label>Edit Description</label>
@@ -125,6 +131,10 @@
                                                 <label class="custom-file-label" for="image">Choose Image</label>
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            Product Link: <br>
+                                            <input type="text" class="form-control" id="link" name="link" value="">
+                                        </div><br>
 
                                        
                                             <div class="row">

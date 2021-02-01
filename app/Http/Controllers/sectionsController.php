@@ -110,6 +110,7 @@ class sectionsController extends Controller
         $data['sec_name']=$request->sec_name;
         $data['image']=$imgUrl;
         $data['status']=$request->status;
+        $data['link']=$request->link;
         $data['description']=$request->description;
         DB::table('sections')->insert($data);
         }
@@ -119,6 +120,7 @@ class sectionsController extends Controller
     
             $data['sec_name']=$request->sec_name;
             $data['status']=$request->status;
+            $data['link']=$request->link;
             $data['description']=$request->description;
             DB::table('sections')->insert($data);
             
@@ -144,6 +146,7 @@ class sectionsController extends Controller
         $section= Section::find($request->id);
         $section->sec_name=$request->sec_name;
         $section->description=$request->description;
+        $section->link=$request->link;
         $section->status=$request->status;
         $section->save();
         return redirect()->back();

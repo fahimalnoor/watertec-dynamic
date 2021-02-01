@@ -108,7 +108,7 @@ Route::get('/fusion','websiteController@fusion')->name('front.fusion');
 Route::get('/dismental','websiteController@dismental')->name('front.dismental');
 
 //Route for frontend menu products
-Route::get('/basin-tap','websiteController@basinTap');
+Route::get('basin-tap','websiteController@basinTap');
 Route::get('/sink-tap','websiteController@sinkTap');
 Route::get('/bip-tap','websiteController@bipTap');
 Route::get('/bidet','websiteController@bidet');
@@ -134,3 +134,4 @@ Route::get('contact','websiteController@contact');
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
+

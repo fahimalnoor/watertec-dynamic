@@ -972,7 +972,39 @@
   .header-mobile .dropdown-menu ul { overflow: hidden; margin: 0 0 10px; padding-left: 0; list-style: none; }
   .header-mobile .customer-area .fa-user{display: block;text-align: center;line-height: 46px;font-size: 20px;}
 
+  .bread1 {background-image: url("resources/views/frontend/cdn/s/files/1/0045/0523/9670/files/bread1.jpg");background-position: center;}
+  
+  .bread1 h1{
+    font-size: 30px;
+    color: black;
+  }
+  .bread1 a{
+    color: black;
+    font-weight: bold;
+  }
+  .bread1 span{
+    color: black;
+    font-weight: bold;
+  }
 
+
+  .bread2 {background-image: url("resources/views/frontend/cdn/s/files/1/0045/0523/9670/files/bread2.jpg");background-position: center;}
+
+.bread2 h1{
+  font-size: 30px;
+  color: black;
+}
+.bread2 a{
+  color: black;
+  font-weight: bold;
+}
+.bread2 span{
+  color: black;
+  font-weight: bold;
+}
+.grid-padding {
+  padding: 0 10px;
+}
 
 
 

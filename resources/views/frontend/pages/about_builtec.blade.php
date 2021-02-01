@@ -67,6 +67,8 @@
         
       
        <div class="dt-sc-hr-invisible-large"></div>
-    </main> 
-    @endforeach
+       @endforeach
 @endsection
+
+    </main> 
+   

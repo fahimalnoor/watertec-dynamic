@@ -1,7 +1,7 @@
 @extends('frontend.frontmaster')
 @section('content')
 
-<nav class="breadcrumb" aria-label="breadcrumbs" style="margin-top: 85px">
+<nav class="breadcrumb bread2" aria-label="breadcrumbs" style="margin-top: 85px">
  
 
   
@@ -40,7 +40,7 @@
     <div class="dt-sc-hr-invisible-large"></div>
     <div class="grid__item">
       <div class="contact-form-section">
-        <form method="post" action="https://bath-fixtures.myshopify.com/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="contact" /><input type="hidden" name="utf8" value="✓" />
+        <form method="post" action="" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="contact" /><input type="hidden" name="utf8" value="✓" />
         
         
         

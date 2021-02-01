@@ -451,7 +451,7 @@
           
           @foreach($content5 as $all_content5)
           <div class="item">
-            <a <img src="{{ $all_content5->image }}" alt="" /></a>
+            <img src="{{ $all_content5->image }}" alt="" />
           </div>
           @endforeach      
           
@@ -484,7 +484,7 @@
               <div class=" grid__item wide--one-quarter post-large--one-quarter large--one-quarter medium--one-half small-grid__item">
               
                 <div class="icon-section wow fadeInUp animated">
-                  <a href="{{route('front.products')}}">
+                  <a href="{{ $all_content6->link }}">
                     
                     <div class="icon">
                       <img src="{{ asset($all_content6->image) }}"  style ="border: 5px solid  #e81a46;"/>
